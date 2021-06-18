@@ -3,8 +3,6 @@ title: "Application of multi-objective optimization in machine learning problems
 date: 2020-12-14
 excerpt: "My undergrad thesis"
 collection: projects
-header:
-  teaser: "unsplash-gallery-image-2-th.jpg"
 tags:
   - Machine learning
   - Multi-objective optimization
