@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About Me"
+title: "About"
 excerpt: "MS student at FGV with interest in Artificial Intelligence Ethics"
 author_profile: true
 redirect_from: 
