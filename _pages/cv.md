@@ -10,8 +10,8 @@ toc: true
 
 ## Education
 
-* B.S. in Applied Mathematics, FGV - Getulio Vargas Foundation, 2017/2020
-* M.S. in Mathematical Modeling, FGV - Getulio Vargas Foundation, 2021/2022
+* B.S. in Applied Mathematics, FGV - Fundação Getulio Vargas, 2017/2020
+* M.S. in Mathematical Modeling, FGV - Fundação Getulio Vargas, 2021/2022
 
 ## Work experience
 

@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Vitoria Guardieiro"
 title_separator          : "-"
 name                     : &name "Vitoria Guardieiro"
-description              : &description "MS student with a focus on AI Ethics at FGV"
+description              : &description "MS student at FGV with interest in Artificial Intelligence Ethics"
 url                      : https://viguardieiro.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "viguardieiro.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Vitoria Guardieiro"
   avatar           : "profile.jpeg"
-  bio              : "MS student with a focus on AI Ethics at FGV"
+  bio              : "MS student at FGV with interest in Artificial Intelligence Ethics"
   location         : "Rio de Janeiro, Brazil"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
