@@ -15,7 +15,7 @@ toc: true
 
 ## Work experience
 
-### Fundação Getulio Vargas [![Homepage](/images/link-icon-white.svg)](https://portal.fgv.br/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)
+**Fundação Getulio Vargas** [![Homepage](/images/link-icon-white.svg)](https://portal.fgv.br/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)
   * Graduate Researcher <small>-- *March 2021/Now*</small>
     * 
   * Undergraduate Researcher <small>-- *Aug 2017/Sep 2019*</small>
@@ -26,17 +26,17 @@ toc: true
   * Undergraduate Teaching Assistant <small>-- *Feb 2018/July 2018*</small>
     * Taught extra classes, applied simulations and answered student questions about Excel, LaTeX, Matlab and Microsoft Access.
 
-### Gabriel Tecnologia [![Homepage](/images/link-icon-white.svg)](https://www.gabriel.com.br/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/eusouagabriel/)
+**Gabriel Tecnologia** [![Homepage](/images/link-icon-white.svg)](https://www.gabriel.com.br/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/eusouagabriel/)
   * Data Scientist <small>-- *Jan 2021/Now*</small>
     * 
   * Data Science Intern <small>-- *May 2020/December 2020*</small>
     * 
 
-### BTG Pactual [![Homepage](/images/link-icon-white.svg)](https://www.btgpactual.com/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/btgpactual/)
+**BTG Pactual** [![Homepage](/images/link-icon-white.svg)](https://www.btgpactual.com/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/btgpactual/)
   * IT Intern <small>-- *Jan 2020/Apr 2020*</small>
     * 
 
-### PSR - Energy Consulting and Analytics [![Homepage](/images/link-icon-white.svg)](https://www.psr-inc.com/pt/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/psrenergy/)
+**PSR - Energy Consulting and Analytics** [![Homepage](/images/link-icon-white.svg)](https://www.psr-inc.com/pt/) [![LinkedIn](/images/linkedin-icon.svg)](https://www.linkedin.com/company/psrenergy/)
   * Intern <small>-- *Feb 2019/Oct 2019*</small>
     * Developed optimization programs for maintenance scheduling in thermoelectric and hydroelectric plants and determination of firm energy from hydroelectric plants.
   * Summer Intern <small>-- *Jan 2019/Feb 2019*</small>
