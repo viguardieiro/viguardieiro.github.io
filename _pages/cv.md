@@ -49,7 +49,7 @@ toc: true
   
 ## Skills
 
-* Programming languages
+**Programming languages**
   * Python
   * Julia
   * Matlab
