@@ -1,6 +1,6 @@
 ---
-title: "Application of multi-objective optimization in machine learning problems to decrease discrimination"
-excerpt: "My undergrad thesis"
+title: "MOOpt Fairness"
+excerpt: "Application of multi-objective optimization in machine learning problems to decrease discrimination"
 tags:
   - Machine learning
   - Multi-objective optimization
@@ -10,9 +10,13 @@ header:
   teaser: /assets/images/fair_mo.png
 ---
 
-My Undergraduate Thesis
+## Application of multi-objective optimization in machine learning problems to decrease discrimination
 
-**URI:** [https://hdl.handle.net/10438/30353](https://hdl.handle.net/10438/30353)
+This project was my undergradute thesis and consisted in the application of Multi-Objective Optimization (MOO) to train fairer binary classification models. My supervisers were professors [Jorge Poco](https://vgc.poly.edu/~jpocom/) and [Marcos M. Raimundo](https://marcosmrai.github.io/).
+
+The thesis is available (in Portuguese) [here](https://hdl.handle.net/10438/30353) and the presentation slides (also in Portuguese) are available [here](http://viguardieiro.github.io/assets/files/MOOptFairness.pdf).
+
+The code is available [here](https://github.com/viguardieiro/moopt_fairness).
 
 ## Abstract
 
