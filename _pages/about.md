@@ -1,8 +1,15 @@
 ---
-permalink: /about/
+permalink: /
 title: "About"
+excerpt: "MS student at FGV with interest in Artificial Intelligence Ethics"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hi! I am currently a Master's student at the Visual Data Science Lab in the [School of Applied Mathematics (EMAp)](https://emap.fgv.br/) of [Fundação Getulio Vargas (FGV)](https://portal.fgv.br/). I earned my B.S. in Applied Mathematics from FGV in 2020. As part of my professional life, I worked with Mathematical Optimization and Computer Vision. For more information about my background, visit my [curriculum](/cv/).
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I am particularly interested in the development of ethical Machine Learning models and Artificial Intelligence auditing. My research is focused on the use of Multi-Objective Optimization and Ensemble Learning methods to enforce Fairness in Machine Learning Models.
+
+I am still working on this site :)
