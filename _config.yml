@@ -73,6 +73,9 @@ author:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/vitoriaguardieiro/"
+    - label: "Lattes"
+      icon: "ai fa-fw ai-lattes"
+      url: http://lattes.cnpq.br/2617893590337087
 
 footer:
   links:
@@ -82,6 +85,9 @@ footer:
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/vitoriaguardieiro/"
+    - label: "Lattes"
+      icon: "ai fa-fw ai-lattes"
+      url: http://lattes.cnpq.br/2617893590337087
 
 defaults:
   # _posts
