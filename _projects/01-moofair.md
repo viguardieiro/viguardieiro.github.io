@@ -1,6 +1,7 @@
 ---
 title: "MOOpt Fairness"
 excerpt: "Application of multi-objective optimization in machine learning problems to decrease discrimination"
+date: 2020-12-07
 tags:
   - Machine learning
   - Multi-objective optimization
