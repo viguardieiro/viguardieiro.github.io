@@ -1,7 +1,7 @@
 ---
-title: "STI-DBSCAN: Clustering spatial-time interval data and utilizing it for Waze accident data"
+title: "STI-DBSCAN"
 date: 2018-12-03
-excerpt: "An algorithm based on dbscan that clusters spatial-temporal interval data"
+excerpt: "An algorithm based on dbscan that clusters spatial-temporal interval data and an application in Waze accident data"
 tags:
   - Machine learning
   - Clustering

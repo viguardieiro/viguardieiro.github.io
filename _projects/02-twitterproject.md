@@ -1,7 +1,7 @@
 ---
-title: "TwitterProject - Machine Learning & Analysis for Twitter Bot Detection"
+title: "Twitter Project"
 date: 2020-08-31
-excerpt: "This work proposes to classify Twitter users as human operated or bot operated, utilizing a range of features obtained from the users’ profiles and the tweets they post"
+excerpt: "Machine Learning & Analysis for Twitter Bot Detection"
 tags:
   - Machine learning
   - Natural language processing
