@@ -1,10 +1,10 @@
 main:
+  - title: "Publications"
+    url: /publications/
+
   - title: "Curriculum"
     url: /cv/
 
-  - title: "Publications"
-    url: /publications/
- 
-  - title: "Projects"
-    url: /projects/
+  #- title: "Projects"
+  #  url: /projects/
     
