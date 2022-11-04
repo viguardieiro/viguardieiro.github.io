@@ -7,12 +7,14 @@ redirect_from:
   - /resume
 ---
 
+A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guardieiro.pdf).
+
 ## Education
 
-* B.S. in Applied Mathematics, FGV - Fundação Getulio Vargas, 2017/2020
 * M.S. in Mathematical Modeling, FGV - Fundação Getulio Vargas, 2021/2022
+* B.S. in Applied Mathematics, FGV - Fundação Getulio Vargas, 2017/2020
 
-## Work experience
+## Experience
 
 **Fundação Getulio Vargas** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
 *Brazilian non-profit higher education institution and think tank dedicated to promoting Brazil’s economic and social development.*
