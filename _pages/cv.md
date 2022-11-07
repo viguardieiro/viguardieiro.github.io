@@ -11,13 +11,25 @@ A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guard
 
 ## Education
 
-* M.S. in Mathematical Modeling, FGV - Fundação Getulio Vargas, 2021/2022
-* B.S. in Applied Mathematics, FGV - Fundação Getulio Vargas, 2017/2020
+**M.S. in Mathematical Modeling** - Fundação Getulio Vargas (FGV), 2021/2022
+* Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
+* Dissertation: Multi-objective Optimization in Machine Learning - A Systematic Review
+
+**B.S. in Applied Mathematics** - Fundação Getulio Vargas (FGV), 2017/2020
+* Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
+* Bachelor’s dissertation: [Application of multi-objective optimization in machine learning problems to decrease discrimination](https://bibliotecadigital.fgv.br/dspace/handle/10438/30353)
+
+## Publications
+
+1. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "Enforcing fairness using ensemble of diverse Pareto-optimal models". To appear in Data Mining and Knowledge Discovery.
+
+2. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "[Analyzing the Equity of the Brazilian National High School Exam by Validating the Item Response Theory’s Invariance](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.64/2022.EDM-posters.64.pdf)". Proceedings of the 15th International Conference on Educational Data Mining.
+
+3. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Fundação Getulio Vargas.
 
 ## Experience
 
 **Fundação Getulio Vargas** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
-*Brazilian non-profit higher education institution and think tank dedicated to promoting Brazil’s economic and social development.*
   * Graduate Researcher -- *March 2021/Now*
     * 
   * Undergraduate Researcher -- *Aug 2017/Sep 2019*
@@ -25,8 +37,6 @@ A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guard
     * Worked with Waze data, developing a clustering algorithm for interval time-spatial structures.
     * Studied Logic and Natural Language Processing, contributing to databases such as Open Multilingual Wordnet (OMW) and Suggested Upper Merged Ontology (SUMO).
     * Participated in the elaboration of the Consumer Price Index - Web (IPC-Web), a joint project between the School of Applied Mathematics (EMAp) and the Brazilian Institute of Economics (IBRE). In the project, I was responsible for filtering and classifying the products from the database resulting from the crawler used.
-  * Undergraduate Teaching Assistant -- *Feb 2018/July 2018*  
-    * Course: Introduction to Computing / Professor: Walter Sande / Description: Taught extra classes, applied simulations, and answered student questions about Excel, LaTeX, Matlab, and Microsoft Access.
 
 **Gabriel Tecnologia** [![Homepage](/assets/images/link-icon.svg)](https://www.gabriel.com.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/company/eusouagabriel/)  
 *Startup that created a protection network that uses artificial intelligence cameras.*
@@ -47,22 +57,20 @@ A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guard
   * Summer Intern -- *Jan 2019/Feb 2019*
     * Learned Julia programming language and optimization methods like linear programming and integer linear programming (ILP).
 
-  
+## Teaching
+**Teaching Assistant**
+  * [Machine Learning](https://emap.fgv.br/en/discipline/machine-learning), 2022/2.
+  * [Continuous Optimization](https://emap.fgv.br/en/discipline/continuous-optimization), 2022/2.
+  * [Optimization for Data Science](https://emap.fgv.br/en/discipline/optimization-data-science), 2022/2.
+  * [Machine Learning](https://emap.fgv.br/en/discipline/machine-learning), 2022/1.
+  * [Statistical Inference](https://emap.fgv.br/en/discipline/statistical-inference), 2021/2.
+  * [Introduction to Computing](https://emap.fgv.br/en/discipline/introduction-computation-and-programming), 2017/1.
+
 ## Skills
 
-**Programming languages**
-  * Python
-  * Julia
-  * Matlab
-  * R
-  * C/C++
-  * C#
+**Programming languages:** Python, Julia, Matlab, R, C, C++, C#
 
-## Publications
-
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+**Languages:** Portuguese (Native) and English (TOEFL 112/120)
 
 {% comment %}  
 Talks
