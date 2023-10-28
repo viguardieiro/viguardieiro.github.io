@@ -20,3 +20,5 @@ Under Review
 ------
 
 * Parikshit Solunke, Vitoria Guardieiro, João Rulff, Peter Xenopoulos, Gromit Yeuk-Yin Chan, Brian Barr, Luis Gustavo Nonato, and Claudio Silva. "Mountaineer: Topology-Driven Visual Analytics for Comparing Local Explanations".
+
+* Priscylla Silva, Vitoria Guardieiro, Brian Barr, Claudio Silva, Luis Nonato. "Visagreement: Visualizing and Exploring Explanations (Dis)Agreement".
