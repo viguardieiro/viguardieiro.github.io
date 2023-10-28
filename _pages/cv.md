@@ -7,13 +7,13 @@ redirect_from:
   - /resume
 ---
 
-A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guardieiro.pdf).
+A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro.pdf).
 
 ## Education
 
-**M.S. in Mathematical Modeling** - Fundação Getulio Vargas (FGV), 2021/2022
+**M.S. in Mathematical Modeling** - Fundação Getulio Vargas (FGV), 2021/2023
 * Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
-* Dissertation: Multi-objective Optimization in Machine Learning - A Systematic Review
+* Dissertation: [Multi-objective Optimization in Machine Learning - A Systematic Review](https://bibliotecadigital.fgv.br/dspace/handle/10438/34077)
 
 **B.S. in Applied Mathematics** - Fundação Getulio Vargas (FGV), 2017/2020
 * Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
@@ -29,9 +29,15 @@ A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guard
 
 ## Experience
 
+**New York University** [![Homepage](/assets/images/link-icon.svg)](https://www.nyu.edu/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/new-york-university/)  
+  * Research Scientist -- *Oct 2023/Now*
+  * Visiting Researcher -- *Jan 2023/Apr 2023*
+    * Researched Topological Data Analysis for Machine Learning explainability at the Visualization Imaging and Data Analysis Center (VIDA) with Professor Claudio Silva
+
 **Fundação Getulio Vargas** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
-  * Graduate Researcher -- *March 2021/Now*
-    * 
+  * Graduate Researcher -- *March 2021/Jun 2023*
+    * Researched Multi-Objective Machine Learning and elaboreted an extensive survey of the field
+    * Developed Fair Machine Learning models based on Multi-Objective Optimization and Ensemble Learning
   * Undergraduate Researcher -- *Aug 2017/Sep 2019*
     * Studied neural networks and some methods derived from it, such as Recurrent Neural Networks, applying a model to generate music from a database, and Deep Reinforcement Learning, applying it to game models.
     * Worked with Waze data, developing a clustering algorithm for interval time-spatial structures.
@@ -71,6 +77,8 @@ A short (one page) CV is available [here](/assets/files/Short_CV___Vitoria_Guard
 **Programming languages:** Python, Julia, Matlab, R, C, C++, C#
 
 **Languages:** Portuguese (Native) and English (TOEFL 112/120)
+
+*Last update: Oct 28, 2023*
 
 {% comment %}  
 Talks
