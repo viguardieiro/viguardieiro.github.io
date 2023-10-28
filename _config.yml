@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Vitória Guardieiro
+title: Vitoria Guardieiro
 email: vitoriaguardieiro@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Vitória Guardieiro's academic website
+  Vitoria Guardieiro's academic website
 twitter_username: username
 github_username: viguardieiro
 minimal_mistakes_skin: default
@@ -56,11 +56,11 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Vitória Guardieiro"
+  name   : "Vitoria Guardieiro"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "MSc student at Fundação Getulio Vargas with interest in Machine Learning, Optimization and AI Ethics"
+  bio    : "Research scientist at NYU working on n visualization systems for Explainable AI"
   links:
-    - label: "Rio de Janeiro, Brazil"
+    - label: "New York, USA"
       icon: "fas fa-fw fa-map-marker-alt"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
