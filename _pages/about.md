@@ -1,13 +1,17 @@
 ---
 permalink: /
 title: "About"
-excerpt: "MS student at FGV with interest in Machine Learning and Optimization"
+excerpt: "Research Scientist at NYU, working with visualization systems for Explainable AI"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Hi! I am currently a Master's student at the Visual Data Science Lab in the [School of Applied Mathematics (EMAp)](https://emap.fgv.br/) of [Fundação Getulio Vargas (FGV)](https://portal.fgv.br/). I earned my B.S. in Applied Mathematics from FGV in 2020. As part of my professional life, I worked with Mathematical Optimization and Computer Vision. For more information about my background, visit my [curriculum](/cv/).
+Hi! I am currently a research scientist at the Visualization and Data Analytics Research Center ([VIDA](https://vida.engineering.nyu.edu/)) at New York University ([NYU](https://www.nyu.edu/)), under the supervision of professor [Claudio Silva](https://ctsilva.github.io/). 
 
-I am interested in Machine Learning, Optimization (with a focus but not limited to Multi-Objective Optimization), and Statistics. My current research is focused on developing ethical Machine Learning models, specifically employing Multi-Objective Optimization and Ensemble Learning methods to learn fair ML models.
+Previously, I was a Master's student at the Visual Data Science Lab ([V-DS](http://www.visualdslab.com/)) in the School of Applied Mathematics ([EMAp](https://emap.fgv.br/)) of Fundação Getulio Vargas ([FGV](https://portal.fgv.br/)), where I worked with professors [Jorge Poco](http://visualdslab.com/~jpocom/) and [Marcos M. Raimundo](https://ic.unicamp.br/~mraimundo/) (from [Unicamp](https://ic.unicamp.br/en/)). I obtained my B.S. in Applied Mathematics from FGV/EMAp in 2020 under the supervision of Jorge Poco and Marcos M. Raimundo. 
+
+My current research focuses on visualization systems for Explainable AI and Topological Data Analysis. I previously researched Multi-Objective Machine Learning and the development of Fair ML models.
+
+Last update: Oct 28, 2023
