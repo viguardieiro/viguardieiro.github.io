@@ -70,7 +70,7 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
   * [Optimization for Data Science](https://emap.fgv.br/en/discipline/optimization-data-science), 2022/2.
   * [Machine Learning](https://emap.fgv.br/en/discipline/machine-learning), 2022/1.
   * [Statistical Inference](https://emap.fgv.br/en/discipline/statistical-inference), 2021/2.
-  * [Introduction to Computing](https://emap.fgv.br/en/discipline/introduction-computation-and-programming), 2017/1.
+  * [Introduction to Computing](https://emap.fgv.br/en/discipline/introduction-computation-and-programming), 2018/1.
 
 ## Skills
 
