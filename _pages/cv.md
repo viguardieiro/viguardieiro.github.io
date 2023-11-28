@@ -11,21 +11,21 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 
 ## Education
 
-**M.S. in Mathematical Modeling** - Fundação Getulio Vargas (FGV), 2021/2023
+**M.S. in Mathematical Modeling** - Getulio Vargas Foundation (FGV), 2021/2023
 * Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
 * Dissertation: [Multi-objective Optimization in Machine Learning - A Systematic Review](https://bibliotecadigital.fgv.br/dspace/handle/10438/34077)
 
-**B.S. in Applied Mathematics** - Fundação Getulio Vargas (FGV), 2017/2020
+**B.S. in Applied Mathematics** - Getulio Vargas Foundation (FGV), 2017/2020
 * Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
 * Bachelor’s dissertation: [Application of multi-objective optimization in machine learning problems to decrease discrimination](https://bibliotecadigital.fgv.br/dspace/handle/10438/30353)
 
 ## Publications
 
-1. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "Enforcing fairness using ensemble of diverse Pareto-optimal models". To appear in Data Mining and Knowledge Discovery.
+1. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2023). "[Enforcing fairness using ensemble of diverse Pareto-optimal models](https://doi.org/10.1007/s10618-023-00922-y)". Data Mining and Knowledge Discovery.
 
 2. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "[Analyzing the Equity of the Brazilian National High School Exam by Validating the Item Response Theory’s Invariance](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.64/2022.EDM-posters.64.pdf)". Proceedings of the 15th International Conference on Educational Data Mining.
 
-3. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Fundação Getulio Vargas.
+3. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Getulio Vargas Foundation.
 
 ## Experience
 
@@ -34,7 +34,7 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
   * Visiting Researcher -- *Jan 2023/Apr 2023*
     * Researched Topological Data Analysis for Machine Learning explainability at the Visualization Imaging and Data Analysis Center (VIDA) with Professor Claudio Silva
 
-**Fundação Getulio Vargas** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
+**Getulio Vargas Foundation** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
   * Graduate Researcher -- *March 2021/Jun 2023*
     * Researched Multi-Objective Machine Learning and elaboreted an extensive survey of the field
     * Developed Fair Machine Learning models based on Multi-Objective Optimization and Ensemble Learning
@@ -72,13 +72,37 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
   * [Statistical Inference](https://emap.fgv.br/en/discipline/statistical-inference), 2021/2.
   * [Introduction to Computing](https://emap.fgv.br/en/discipline/introduction-computation-and-programming), 2018/1.
 
+## Awards & Scholarships
+
+**Coordination for the Improvement of Higher Education Personnel (CAPES)**\
+*M.Sc. Scholarship* - Mar 2021/Feb 2023
+
+**FGV's Center for the Development of Mathematics and Science (CDMC)**\
+*B.Sc. Scholarship* - 2017/2020
+
+**Brazilian Mathematical Olympiad of Public Schools (OBMEP)**
+  * Gold medal (2016) - Top 0.001%
+  * Bronze medal (2015) - Top 0.03%
+  * Silver medal (2014) - Top 0.01%
+  * Silver medal (2013) - Top 0.01%
+  * Bronze medal (2012) - Top 0.03%
+  * Bronze medal (2011) - Top 0.03%
+
+**Jovens Gênio Algar (JoGAr) - Coding Marathon**
+  * First place in the advanced category (2016) - Top 1%
+  * Third place (2015) - Top 5%
+  * Fourth place (2014) - Top 5%
+
+**BeeCrowd (previously URI Online Judge) - Competitive Programming Platform**\
+*Top 0.2% of users*
+
 ## Skills
 
-**Programming languages:** Python, Julia, Matlab, R, C, C++, C#
+**Programming languages:** Python, Julia, Matlab, R, C, C++, Javascript
 
 **Languages:** Portuguese (Native) and English (TOEFL 112/120)
 
-*Last update: Oct 28, 2023*
+*Last update: Nov 28, 2023*
 
 {% comment %}  
 Talks
