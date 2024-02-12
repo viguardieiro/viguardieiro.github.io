@@ -13,4 +13,13 @@ Previously, I was a Master's student at the Visual Data Science Lab ([V-DS](http
 
 My current research focuses on visualization systems for Explainable AI and Topological Data Analysis. I previously researched Multi-Objective Machine Learning and the development of Fair ML models.
 
-Last update: Oct 28, 2023
+## Interests
+
+- Machine Learning
+- Explainable AI
+- AI Ethics
+- Optimization
+- Topological Data Analysis
+
+<br/>
+*Last update:* Oct 28, 2023
