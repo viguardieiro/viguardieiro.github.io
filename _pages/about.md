@@ -1,7 +1,6 @@
 ---
 permalink: /
 title: "About"
-excerpt: "Research Scientist at NYU, working with visualization systems for Explainable AI"
 author_profile: true
 redirect_from: 
   - /about/
