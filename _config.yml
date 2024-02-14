@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 twitter_username: username
 github_username: viguardieiro
 minimal_mistakes_skin: default
-search: true
+search: false
 
 # Build settings
 markdown: kramdown
@@ -59,6 +59,7 @@ author:
   name   : "Vitoria Guardieiro"
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "Research scientist at NYU working on visualization systems for Explainable AI"
+  location: "New York, USA"
   links:
     - label: "New York, USA"
       icon: "fas fa-fw fa-map-marker-alt"
