@@ -1,5 +1,4 @@
 ---
-layout: posts
 title: "Publications"
 permalink: /publications/
 classes: wide
