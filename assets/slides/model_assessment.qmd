@@ -233,6 +233,14 @@ Alsallakh, B., Hanbury, A., Hauser, H., Miksch, S., & Rauber, A. (2014). *Visual
 Beauxis-Aussalet, E., & Hardman, L. (2014). *Visualization of confusion matrix for non-expert users*. In IEEE Conference on Visual Analytics Science and Technology (VAST)-Poster Proceedings.
 :::
 
+## Beauxis-Aussalet and Hardman (2014)
+
+![](figs/model_assessment_figs/confusion_matrix_non_expert.png){fig-align="center"}
+
+:::footer
+Beauxis-Aussalet, E., & Hardman, L. (2014). *Visualization of confusion matrix for non-expert users*. In IEEE Conference on Visual Analytics Science and Technology (VAST)-Poster Proceedings.
+:::
+
 ## EnsembleMatrix (2009)
 
 ![](figs/model_assessment_figs/ensemble_matrix.png){fig-align="center"}
