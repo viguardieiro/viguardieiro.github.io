@@ -28,8 +28,6 @@ resources:
 
 # Confusion Matrices, ROC Curves
 
-## Accuracy Fails
-
 ## Scenario: Disease Prediction
 
 * Consider a disease prediction model. Suppose the hypothetical disease has a 5% prevalence in the population
@@ -111,13 +109,19 @@ plt.show()
 
 ## Receiver Operating Characteristic (ROC)
 
-## Receiver Operating Characteristic (ROC)
+:::: {.columns}
+::: {.column width="60%"}
+* ROC analysis is another way to assess a classifier’s output
 
-ROC analysis is another way to assess a classifier’s output.
+* ROC analysis developed out of radar operation in the second World War, where operators were interested in detecting signal (enemy aircraft) versus noise
 
-ROC analysis developed out of radar operation in the second World War, where operators were interested in detecting signal (enemy aircraft) versus noise. 
+* We create an ROC curve by plotting the true positive rate (TPR) against the false positive rate (FPR) at various thresholds
+:::
 
-We create an ROC curve by plotting the true positive rate (TPR) against the false positive rate (FPR) at various thresholds.
+::: {.column width="35%"}
+![](figs/model_assessment_figs/roc_data_aircraft.png)
+:::
+::::
 
 ## ROC Curve
 
@@ -273,7 +277,7 @@ $(\bar{y} = 0/2 = 0\%)$
 Slides based on [classifier-calibration.github.io](https://classifier-calibration.github.io/)
 :::
 
-## Visualizing forecasts: the reliability diagram
+## Visualizing forecasts - The Reliability Diagram
 
 \
 
@@ -409,18 +413,46 @@ Image taken from Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017, July).
 Image taken from Minderer, Matthias, et al. (2021). *Revisiting the calibration of modern neural networks*. Advances in Neural Information Processing Systems.
 :::
 
-## Hyperparameters of reliability diagrams
+## Proper Scoring Rules
 
-\
+* Proper scoring rules are calculated at the observation level, where as ECE is binned
 
-![](figs/model_assessment_figs/calibrate_reliability_hyperparameters.png){fig-align="center"}
+* Think of them as putting each item in its separate bin, then computing the average of some loss for each predicted probability and its corresponding observed label
 
-:::footer
-Image taken from Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibrate: Interactive analysis of probabilistic model output*. IEEE Transactions on Visualization and Computer Graphics.
+![](figs/model_assessment_figs/proper_scoring_rules.png){fig-align="center"}
+
+::: footer
+Slides based on [classifier-calibration.github.io](https://classifier-calibration.github.io/)
 :::
 
-:::notes
-Reliability diagrams consider a few parameters, namely, the number of bins you show and how you create these bins, which is often referred to as the binning strategy. We can see here that these choices have significant effects on what we see. One one hand, the quantile strategy would suggest the model here is calibrated. But the uniform strategy shows regions of miscalibration. Which parameters do we choose?
+## Proper Scoring Rules
+
+* Brier Score/Quadratic error/Euclidean distance: 
+
+$$BS = \frac{1}{N} \sum_{i=1}^N (\hat{y}_i - y_i)^2$$
+
+* Log-loss/Cross entropy: 
+
+    - Frequently used to as the training loss of machine learning methods, such as neural networks
+
+    - Only penalises the probability given to the true class
+
+$$LL = -\frac{1}{N} \sum_{i=1}^N [y_i \text{log}(\hat{y}_i) + (1-y_i)\text{log}( 1 - \hat{y}_i)]$$
+
+::: footer
+Slides based on [classifier-calibration.github.io](https://classifier-calibration.github.io/)
+:::
+
+## Proper Scoring Rules
+
+An intuitive way to decompose proper scoring rules is into refinement and calibration losses
+
+* **Refinement loss:** is the loss due to producing the same probability for instances from different classes
+
+* **Calibration loss:** is the loss due to the difference between the probabilities predicted by the model and the proportion of positives among instances with the same output
+
+::: footer
+Slides based on [classifier-calibration.github.io](https://classifier-calibration.github.io/)
 :::
 
 ## Calibration Techniques
@@ -445,16 +477,16 @@ Slides based on [classifier-calibration.github.io](https://classifier-calibratio
 
 ## Platt scaling
 
-* Assumes the calibration curve can be corrected by applying a sigmoid to the raw predictions
+* Assumes the calibration curve can be corrected by applying a sigmoid to the raw predictions. This means finding $\mathbf{A}$ and $\mathbf{b}$ via MLE:
 
-$$p(y_i = 1 | f_i) = \frac{1}{1 + exp(Af_i + B)}$$
+$$p(y_i = 1 | \hat{y}_i) = \frac{1}{1 + exp(\mathbf{A}\hat{y}_i + \mathbf{b})}$$
 
 
 * Works best if the calibration error is symmetrical (classifier output for each binary class is normally distributed with the same variance) 
 
 * This can be a problem for highly imbalanced classification problems, where outputs do not have equal variance
 
-* In general this method is most effective when the un-calibrated model is under-confident and has similar calibration errors for both high and low outputs
+* In general it is most effective when the un-calibrated model is under-confident and has similar calibration errors for both high and low outputs
 
 ## Isotonic regression
 
@@ -482,18 +514,50 @@ $$p(y_i = 1 | f_i) = \frac{1}{1 + exp(Af_i + B)}$$
 [code](https://scikit-learn.org/stable/auto_examples/calibration/plot_calibration_curve.html)
 :::
 
-## Visualization Calibration for Multi-Class Problems
+## Calibration Takeaways
 
-![](figs/model_assessment_figs/calibration_multiclass.png){fig-align="center"}
+* Reliability diagrams are a standard way to visualize calibration
+
+* ECE is a summary of what reliability diagrams show
+
+* Proper scoring rules (Log loss, Brier score) measure different aspects of probability correctness
+
+* However, proper scoring rules cannot tell us where a model is miscalibrated
+
+
+## Hyperparameters of reliability diagrams
+
+\
+
+![](figs/model_assessment_figs/calibrate_reliability_hyperparameters.png){fig-align="center"}
 
 :::footer
-Image taken from Vaicenavicius, Juozas, et al. *Evaluating model calibration in classification*. The 22nd International Conference on Artificial Intelligence and Statistics. PMLR, 2019.
+Image taken from Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibrate: Interactive analysis of probabilistic model output*. IEEE Transactions on Visualization and Computer Graphics.
+:::
+
+:::notes
+Reliability diagrams consider a few parameters, namely, the number of bins you show and how you create these bins, which is often referred to as the binning strategy. We can see here that these choices have significant effects on what we see. One one hand, the quantile strategy would suggest the model here is calibrated. But the uniform strategy shows regions of miscalibration. Which parameters do we choose?
+:::quart
+
+## Calibrate (2023)
+
+![](figs/model_assessment_figs/calibrate_teaser.png){fig-align="center"}
+
+:::footer
+Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibrate: Interactive analysis of probabilistic model output*. IEEE Transactions on Visualization and Computer Graphics.
+:::
+
+## Calibrate (2023) - Learned Reliability Diagram
+
+![](figs/model_assessment_figs/calibrate_learned_rel_diag.png){fig-align="center"}
+
+:::footer
+Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibrate: Interactive analysis of probabilistic model output*. IEEE Transactions on Visualization and Computer Graphics.
 :::
 
 ## Calibrate (2023)
 
-
-![](figs/model_assessment_figs/calibrate_teaser.png){fig-align="center"}
+{{< video figs/model_assessment_figs/vis22a-sub1657-i7.mp4 >}}
 
 :::footer
 Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibrate: Interactive analysis of probabilistic model output*. IEEE Transactions on Visualization and Computer Graphics.
@@ -509,6 +573,24 @@ Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., & Silva, C. (2022). *Calibra
 Błasiok, J., & Nakkiran, P. (2023). *Smooth ECE: Principled Reliability Diagrams via Kernel Smoothing*. arXiv preprint arXiv:2309.12236.
 :::
 
+## Smooth ECE (2023)
+
+\
+
+![](figs/model_assessment_figs/smoothece_smoothing.png){fig-align="center"}
+
+:::footer
+Błasiok, J., & Nakkiran, P. (2023). *Smooth ECE: Principled Reliability Diagrams via Kernel Smoothing*. arXiv preprint arXiv:2309.12236.
+:::
+
+## Visualizing Calibration for Multi-Class Problems
+
+![](figs/model_assessment_figs/calibration_multiclass.png){fig-align="center"}
+
+:::footer
+Image taken from Vaicenavicius, Juozas, et al. *Evaluating model calibration in classification*. The 22nd International Conference on Artificial Intelligence and Statistics. PMLR, 2019.
+:::
+
 ## Suggested Calibration Literature
 
 * Niculescu-Mizil, A., & Caruana, R. (2005, August). [Predicting good probabilities with supervised learning](https://dl.acm.org/doi/pdf/10.1145/1102351.1102430?casa_token=o_8UMED_0fIAAAAA:MIq2GzQTPT0f-aWNDSijbcnzJN1riBdGqjq9FGn-wOZ188AOtXbTqRPkc9PuQGKSFIo5b4fM8-ItjQ). In Proceedings of the 22nd international conference on Machine learning (pp. 625-632).
@@ -518,6 +600,8 @@ Błasiok, J., & Nakkiran, P. (2023). *Smooth ECE: Principled Reliability Diagram
 * Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017, July). [On calibration of modern neural networks](http://proceedings.mlr.press/v70/guo17a/guo17a.pdf). In International Conference on Machine Learning (pp. 1321-1330). PMLR.
 
 * Vaicenavicius, J., Widmann, D., Andersson, C., Lindsten, F., Roll, J., & Schön, T. (2019, April). [Evaluating model calibration in classification](http://proceedings.mlr.press/v89/vaicenavicius19a/vaicenavicius19a.pdf). In The 22nd International Conference on Artificial Intelligence and Statistics (pp. 3459-3467). PMLR.
+
+## Suggested Calibration Literature
 
 * Kull, M., & Flach, P. (2015, September). [Novel decompositions of proper scoring rules for classification: Score adjustment as precursor to calibration](https://link.springer.com/content/pdf/10.1007/978-3-319-23528-8_5.pdf). In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp. 68-85). Springer, Cham.
 

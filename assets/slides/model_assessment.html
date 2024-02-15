@@ -7,7 +7,9 @@
 <link href="model_assessment_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="model_assessment_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="model_assessment_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="model_assessment_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="model_assessment_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="model_assessment_files/libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="model_assessment_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.549">
 
   <title>Visualization for Machine Learning</title>
@@ -419,9 +421,6 @@
 <h1>Confusion Matrices, ROC Curves</h1>
 
 </section>
-<section id="accuracy-fails" class="slide level2">
-<h2>Accuracy Fails</h2>
-</section>
 <section id="scenario-disease-prediction" class="slide level2">
 <h2>Scenario: Disease Prediction</h2>
 <ul>
@@ -446,7 +445,7 @@
 <img data-src="figs/model_assessment_figs/extended_confusion_matrix.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="confusion-matrices-in-sklearn" class="slide level2">
 <h2>Confusion Matrices in sklearn</h2>
-<div id="c83bfe57" class="cell" data-execution_count="2">
+<div id="9f5ccd72" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href=""></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> ConfusionMatrixDisplay</span>
 <span id="cb1-3"><a href=""></a></span>
@@ -499,12 +498,17 @@
 <img data-src="figs/model_assessment_figs/neo_reference.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="receiver-operating-characteristic-roc" class="slide level2">
 <h2>Receiver Operating Characteristic (ROC)</h2>
-</section>
-<section id="receiver-operating-characteristic-roc-1" class="slide level2">
-<h2>Receiver Operating Characteristic (ROC)</h2>
-<p>ROC analysis is another way to assess a classifier’s output.</p>
-<p>ROC analysis developed out of radar operation in the second World War, where operators were interested in detecting signal (enemy aircraft) versus noise.</p>
-<p>We create an ROC curve by plotting the true positive rate (TPR) against the false positive rate (FPR) at various thresholds.</p>
+<div class="columns">
+<div class="column" style="width:60%;">
+<ul>
+<li><p>ROC analysis is another way to assess a classifier’s output</p></li>
+<li><p>ROC analysis developed out of radar operation in the second World War, where operators were interested in detecting signal (enemy aircraft) versus noise</p></li>
+<li><p>We create an ROC curve by plotting the true positive rate (TPR) against the false positive rate (FPR) at various thresholds</p></li>
+</ul>
+</div><div class="column" style="width:35%;">
+<p><img data-src="figs/model_assessment_figs/roc_data_aircraft.png"></p>
+</div>
+</div>
 </section>
 <section id="roc-curve" class="slide level2">
 <h2>ROC Curve</h2>
@@ -569,7 +573,7 @@
 <img data-src="figs/model_assessment_figs/roc_auc.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="roc-curve-in-sklearn" class="slide level2">
 <h2>ROC curve in sklearn</h2>
-<div id="6de63936" class="cell" data-execution_count="3">
+<div id="dbd588f2" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-2"><a href=""></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> RocCurveDisplay</span>
 <span id="cb2-3"><a href=""></a></span>
@@ -678,8 +682,8 @@
 <p>Slides based on <a href="https://classifier-calibration.github.io/">classifier-calibration.github.io</a></p>
 </div>
 </section>
-<section id="visualizing-forecasts-the-reliability-diagram" class="slide level2">
-<h2>Visualizing forecasts: the reliability diagram</h2>
+<section id="visualizing-forecasts---the-reliability-diagram" class="slide level2">
+<h2>Visualizing forecasts - The Reliability Diagram</h2>
 <p><br>
 </p>
 <div class="columns">
@@ -749,12 +753,12 @@
 </section>
 <section id="reliability-diagram-in-sklearn" class="slide level2">
 <h2>Reliability Diagram in sklearn</h2>
-<div id="d83cb85a" class="cell" data-execution_count="4">
+<div id="8900cec4" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code></code></pre>
 </div>
 </div>
-<div id="b6ecf5d5" class="cell panel-center" data-execution_count="5">
+<div id="582dac20" class="cell panel-center" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="im">from</span> sklearn.calibration <span class="im">import</span> CalibrationDisplay</span>
 <span id="cb4-2"><a href=""></a></span>
 <span id="cb4-3"><a href=""></a>fig <span class="op">=</span> plt.figure()</span>
@@ -826,27 +830,45 @@
 <p>Image taken from Minderer, Matthias, et al.&nbsp;(2021). <em>Revisiting the calibration of modern neural networks</em>. Advances in Neural Information Processing Systems.</p>
 </div>
 </section>
-<section id="hyperparameters-of-reliability-diagrams" class="slide level2">
-<h2>Hyperparameters of reliability diagrams</h2>
-<p><br>
-</p>
+<section id="proper-scoring-rules" class="slide level2">
+<h2>Proper Scoring Rules</h2>
+<ul>
+<li><p>Proper scoring rules are calculated at the observation level, where as ECE is binned</p></li>
+<li><p>Think of them as putting each item in its separate bin, then computing the average of some loss for each predicted probability and its corresponding observed label</p></li>
+</ul>
 
-<img data-src="figs/model_assessment_figs/calibrate_reliability_hyperparameters.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
-<p>Image taken from Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., &amp; Silva, C. (2022). <em>Calibrate: Interactive analysis of probabilistic model output</em>. IEEE Transactions on Visualization and Computer Graphics.</p>
+<img data-src="figs/model_assessment_figs/proper_scoring_rules.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on <a href="https://classifier-calibration.github.io/">classifier-calibration.github.io</a></p>
 </div>
-<aside class="notes">
-<p>Reliability diagrams consider a few parameters, namely, the number of bins you show and how you create these bins, which is often referred to as the binning strategy. We can see here that these choices have significant effects on what we see. One one hand, the quantile strategy would suggest the model here is calibrated. But the uniform strategy shows regions of miscalibration. Which parameters do we choose?</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</section>
+<section id="proper-scoring-rules-1" class="slide level2">
+<h2>Proper Scoring Rules</h2>
+<ul>
+<li>Brier Score/Quadratic error/Euclidean distance:</li>
+</ul>
+<p><span class="math display">\[BS = \frac{1}{N} \sum_{i=1}^N (\hat{y}_i - y_i)^2\]</span></p>
+<ul>
+<li><p>Log-loss/Cross entropy:</p>
+<ul>
+<li><p>Frequently used to as the training loss of machine learning methods, such as neural networks</p></li>
+<li><p>Only penalises the probability given to the true class</p></li>
+</ul></li>
+</ul>
+<p><span class="math display">\[LL = -\frac{1}{N} \sum_{i=1}^N [y_i \text{log}(\hat{y}_i) + (1-y_i)\text{log}( 1 - \hat{y}_i)]\]</span></p>
+<div class="footer">
+<p>Slides based on <a href="https://classifier-calibration.github.io/">classifier-calibration.github.io</a></p>
+</div>
+</section>
+<section id="proper-scoring-rules-2" class="slide level2">
+<h2>Proper Scoring Rules</h2>
+<p>An intuitive way to decompose proper scoring rules is into refinement and calibration losses</p>
+<ul>
+<li><p><strong>Refinement loss:</strong> is the loss due to producing the same probability for instances from different classes</p></li>
+<li><p><strong>Calibration loss:</strong> is the loss due to the difference between the probabilities predicted by the model and the proportion of positives among instances with the same output</p></li>
+</ul>
+<div class="footer">
+<p>Slides based on <a href="https://classifier-calibration.github.io/">classifier-calibration.github.io</a></p>
+</div>
 </section>
 <section id="calibration-techniques" class="slide level2">
 <h2>Calibration Techniques</h2>
@@ -867,13 +889,13 @@
 <section id="platt-scaling" class="slide level2">
 <h2>Platt scaling</h2>
 <ul>
-<li>Assumes the calibration curve can be corrected by applying a sigmoid to the raw predictions</li>
+<li>Assumes the calibration curve can be corrected by applying a sigmoid to the raw predictions. This means finding <span class="math inline">\(\mathbf{A}\)</span> and <span class="math inline">\(\mathbf{b}\)</span> via MLE:</li>
 </ul>
-<p><span class="math display">\[p(y_i = 1 | f_i) = \frac{1}{1 + exp(Af_i + B)}\]</span></p>
+<p><span class="math display">\[p(y_i = 1 | \hat{y}_i) = \frac{1}{1 + exp(\mathbf{A}\hat{y}_i + \mathbf{b})}\]</span></p>
 <ul>
 <li><p>Works best if the calibration error is symmetrical (classifier output for each binary class is normally distributed with the same variance)</p></li>
 <li><p>This can be a problem for highly imbalanced classification problems, where outputs do not have equal variance</p></li>
-<li><p>In general this method is most effective when the un-calibrated model is under-confident and has similar calibration errors for both high and low outputs</p></li>
+<li><p>In general it is most effective when the un-calibrated model is under-confident and has similar calibration errors for both high and low outputs</p></li>
 </ul>
 </section>
 <section id="isotonic-regression" class="slide level2">
@@ -899,17 +921,43 @@
 <p><a href="https://scikit-learn.org/stable/auto_examples/calibration/plot_calibration_curve.html">code</a></p>
 </div>
 </section>
-<section id="visualization-calibration-for-multi-class-problems" class="slide level2">
-<h2>Visualization Calibration for Multi-Class Problems</h2>
+<section id="calibration-takeaways" class="slide level2">
+<h2>Calibration Takeaways</h2>
+<ul>
+<li><p>Reliability diagrams are a standard way to visualize calibration</p></li>
+<li><p>ECE is a summary of what reliability diagrams show</p></li>
+<li><p>Proper scoring rules (Log loss, Brier score) measure different aspects of probability correctness</p></li>
+<li><p>However, proper scoring rules cannot tell us where a model is miscalibrated</p></li>
+</ul>
+</section>
+<section id="hyperparameters-of-reliability-diagrams" class="slide level2">
+<h2>Hyperparameters of reliability diagrams</h2>
+<p><br>
+</p>
 
-<img data-src="figs/model_assessment_figs/calibration_multiclass.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
-<p>Image taken from Vaicenavicius, Juozas, et al.&nbsp;<em>Evaluating model calibration in classification</em>. The 22nd International Conference on Artificial Intelligence and Statistics. PMLR, 2019.</p>
+<img data-src="figs/model_assessment_figs/calibrate_reliability_hyperparameters.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Image taken from Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., &amp; Silva, C. (2022). <em>Calibrate: Interactive analysis of probabilistic model output</em>. IEEE Transactions on Visualization and Computer Graphics.</p>
 </div>
+<p>:::notes Reliability diagrams consider a few parameters, namely, the number of bins you show and how you create these bins, which is often referred to as the binning strategy. We can see here that these choices have significant effects on what we see. One one hand, the quantile strategy would suggest the model here is calibrated. But the uniform strategy shows regions of miscalibration. Which parameters do we choose? :::quart</p>
 </section>
 <section id="calibrate-2023" class="slide level2">
 <h2>Calibrate (2023)</h2>
 
 <img data-src="figs/model_assessment_figs/calibrate_teaser.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., &amp; Silva, C. (2022). <em>Calibrate: Interactive analysis of probabilistic model output</em>. IEEE Transactions on Visualization and Computer Graphics.</p>
+</div>
+</section>
+<section id="calibrate-2023---learned-reliability-diagram" class="slide level2">
+<h2>Calibrate (2023) - Learned Reliability Diagram</h2>
+
+<img data-src="figs/model_assessment_figs/calibrate_learned_rel_diag.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., &amp; Silva, C. (2022). <em>Calibrate: Interactive analysis of probabilistic model output</em>. IEEE Transactions on Visualization and Computer Graphics.</p>
+</div>
+</section>
+<section id="calibrate-2023-1" class="slide level2">
+<h2>Calibrate (2023)</h2>
+<video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="figs/model_assessment_figs/vis22a-sub1657-i7.mp4"></video>
+<div class="footer">
 <p>Xenopoulos, P., Rulff, J., Nonato, L. G., Barr, B., &amp; Silva, C. (2022). <em>Calibrate: Interactive analysis of probabilistic model output</em>. IEEE Transactions on Visualization and Computer Graphics.</p>
 </div>
 </section>
@@ -922,6 +970,22 @@
 <p>Błasiok, J., &amp; Nakkiran, P. (2023). <em>Smooth ECE: Principled Reliability Diagrams via Kernel Smoothing</em>. arXiv preprint arXiv:2309.12236.</p>
 </div>
 </section>
+<section id="smooth-ece-2023-1" class="slide level2">
+<h2>Smooth ECE (2023)</h2>
+<p><br>
+</p>
+
+<img data-src="figs/model_assessment_figs/smoothece_smoothing.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Błasiok, J., &amp; Nakkiran, P. (2023). <em>Smooth ECE: Principled Reliability Diagrams via Kernel Smoothing</em>. arXiv preprint arXiv:2309.12236.</p>
+</div>
+</section>
+<section id="visualization-calibration-for-multi-class-problems" class="slide level2">
+<h2>Visualization Calibration for Multi-Class Problems</h2>
+
+<img data-src="figs/model_assessment_figs/calibration_multiclass.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Image taken from Vaicenavicius, Juozas, et al.&nbsp;<em>Evaluating model calibration in classification</em>. The 22nd International Conference on Artificial Intelligence and Statistics. PMLR, 2019.</p>
+</div>
+</section>
 <section id="suggested-calibration-literature" class="slide level2">
 <h2>Suggested Calibration Literature</h2>
 <ul>
@@ -929,6 +993,11 @@
 <li><p>Nixon, J., Dusenberry, M. W., Zhang, L., Jerfel, G., &amp; Tran, D. (2019, June). <a href="http://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Nixon_Measuring_Calibration_in_Deep_Learning_CVPRW_2019_paper.pdf">Measuring Calibration in Deep Learning</a>. In CVPR Workshops (Vol. 2, No.&nbsp;7).</p></li>
 <li><p>Guo, C., Pleiss, G., Sun, Y., &amp; Weinberger, K. Q. (2017, July). <a href="http://proceedings.mlr.press/v70/guo17a/guo17a.pdf">On calibration of modern neural networks</a>. In International Conference on Machine Learning (pp.&nbsp;1321-1330). PMLR.</p></li>
 <li><p>Vaicenavicius, J., Widmann, D., Andersson, C., Lindsten, F., Roll, J., &amp; Schön, T. (2019, April). <a href="http://proceedings.mlr.press/v89/vaicenavicius19a/vaicenavicius19a.pdf">Evaluating model calibration in classification</a>. In The 22nd International Conference on Artificial Intelligence and Statistics (pp.&nbsp;3459-3467). PMLR.</p></li>
+</ul>
+</section>
+<section id="suggested-calibration-literature-1" class="slide level2">
+<h2>Suggested Calibration Literature</h2>
+<ul>
 <li><p>Kull, M., &amp; Flach, P. (2015, September). <a href="https://link.springer.com/content/pdf/10.1007/978-3-319-23528-8_5.pdf">Novel decompositions of proper scoring rules for classification: Score adjustment as precursor to calibration</a>. In Joint European Conference on Machine Learning and Knowledge Discovery in Databases (pp.&nbsp;68-85). Springer, Cham.</p></li>
 <li><p><a href="https://classifier-calibration.github.io/assets/slides/clacal_tutorial_ecmlpkdd_2020_evaluation.pdf">ECML/PKDD 2020 Tutorial: Evaluation metrics and proper scoring rules</a></p></li>
 <li><p><a href="https://colab.research.google.com/drive/1mqDVJICMBg2eoIr2VPaDjQFUzlDT3grc?usp=sharing">Google Colab notebook for calibration curves</a></p></li>
@@ -1306,6 +1375,7 @@
       }
     });
     </script>
+    <script>videojs(video_shortcode_videojs_video1);</script>
     
 
 </body></html>
