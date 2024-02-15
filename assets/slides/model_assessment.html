@@ -445,7 +445,7 @@
 <img data-src="figs/model_assessment_figs/extended_confusion_matrix.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="confusion-matrices-in-sklearn" class="slide level2">
 <h2>Confusion Matrices in sklearn</h2>
-<div id="abe7827f" class="cell" data-execution_count="2">
+<div id="771e31db" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-2"><a href=""></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> ConfusionMatrixDisplay</span>
 <span id="cb1-3"><a href=""></a></span>
@@ -552,7 +552,7 @@
 <h2>ROC Curve</h2>
 
 <img data-src="figs/model_assessment_figs/roc_curve_naive_bayes.png" class="quarto-figure quarto-figure-center r-stretch"><aside class="notes">
-<p>Speaker notes go here.</p>
+<p>Setting the threshold equal to 0.5, we get an accuracy of 80%. However, the curve indicade a perfect classification performance on this test set. Why is there a discrepancy? The model is not properly calibrated. A threshold of 0.7 has perfect accuracy.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
           position:absolute!important;
@@ -573,7 +573,7 @@
 <img data-src="figs/model_assessment_figs/roc_auc.png" class="quarto-figure quarto-figure-center r-stretch"></section>
 <section id="roc-curve-in-sklearn" class="slide level2">
 <h2>ROC curve in sklearn</h2>
-<div id="597e3185" class="cell" data-execution_count="3">
+<div id="d961e59c" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href=""></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-2"><a href=""></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> RocCurveDisplay</span>
 <span id="cb2-3"><a href=""></a></span>
@@ -592,9 +592,22 @@
 </section>
 <section id="multiclass-roc-curve" class="slide level2">
 <h2>Multiclass ROC curve</h2>
-
-<img data-src="figs/model_assessment_figs/sphx_glr_plot_roc_003.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><div class="r-stack">
-<p><sup><a href="https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html">code</a></sup></p>
+<div class="columns">
+<div class="column" style="width:65%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figs/model_assessment_figs/sphx_glr_plot_roc_003.png" class="quarto-figure quarto-figure-center" style="height:100.0%"></p>
+</figure>
+</div>
+</div><div class="column" style="width:35%;">
+<p><br>
+</p>
+<p><strong>Micro-average:</strong> Aggregate contributions of all classes to calculate the metric. Useful if there is class imbalance.</p>
+<p><strong>Macro-average:</strong> Compute the metric for each class separately, then take average</p>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html">code</a></p>
 </div>
 </section></section>
 <section>
@@ -760,12 +773,12 @@
 </section>
 <section id="reliability-diagram-in-sklearn" class="slide level2">
 <h2>Reliability Diagram in sklearn</h2>
-<div id="bec2d757" class="cell" data-execution_count="4">
+<div id="fceb57cc" class="cell" data-execution_count="4">
 <div class="cell-output cell-output-stdout">
 <pre><code></code></pre>
 </div>
 </div>
-<div id="faa3dea1" class="cell panel-center" data-execution_count="5">
+<div id="558de87e" class="cell panel-center" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href=""></a><span class="im">from</span> sklearn.calibration <span class="im">import</span> CalibrationDisplay</span>
 <span id="cb4-2"><a href=""></a></span>
 <span id="cb4-3"><a href=""></a>fig <span class="op">=</span> plt.figure()</span>

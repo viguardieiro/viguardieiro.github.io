@@ -162,7 +162,7 @@ Speaker notes go here.
 ![](figs/model_assessment_figs/roc_curve_naive_bayes.png){fig-align="center"}
 
 ::: {.notes}
-Speaker notes go here.
+Setting the threshold equal to 0.5, we get an accuracy of 80%. However, the curve indicade a perfect classification performance on this test set. Why is there a discrepancy? The model is not properly calibrated. A threshold of 0.7 has perfect accuracy. 
 :::
 
 ## Area under an ROC curve (AUC)
@@ -186,10 +186,21 @@ plt.show()
 
 ## Multiclass ROC curve
 
-![](figs/model_assessment_figs/sphx_glr_plot_roc_003.png){fig-align="center" width=80%}
+:::: {.columns}
+::: {.column width="65%"}
+![](figs/model_assessment_figs/sphx_glr_plot_roc_003.png){fig-align="center" height=100%}
+:::
+::: {.column width="35%"}
+\
 
-:::{.r-stack}
-<sup>[code](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)</sup>
+**Micro-average:** Aggregate contributions of all classes to calculate the metric. Useful if there is class imbalance.
+
+**Macro-average:** Compute the metric for each class separately, then take average (treats all classes equally)
+:::
+::::
+
+:::footer
+[code](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
 :::
 
 # Visual Analytics Systems for Model Performance
