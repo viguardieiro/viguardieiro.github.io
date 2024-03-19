@@ -57,7 +57,7 @@ plugins:
 
 author:
   name   : "Vitoria Guardieiro"
-  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.png"
   bio    : "Research scientist at NYU working on visualization systems for Explainable AI"
   location: "New York, USA"
   links:
