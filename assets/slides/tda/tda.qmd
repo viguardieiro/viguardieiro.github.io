@@ -1,0 +1,642 @@
+---
+title: "Visualization for Machine Learning"
+subtitle: "Spring 2024"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: figs/vida.jpg
+    footer: <https://cds.nyu.edu>
+    fontsize: 24pt
+resources:
+  - tda.pdf
+---
+
+# Topological Data Analysis
+
+## What is topology? 
+
+- Topology studies the *shape* of mathematical objects
+
+- Unlike Geometry, it is not concerned with sizes, angles, nor coordinates
+
+- It is concerned with the *connectivity* (or lack of) between different “parts” of the object
+
+- Two objects are topologically equivalent if we can transform one into another with continuous transformations (without tearing the object)
+
+![](figs/cube-sphere.png){fig-align="center"}
+
+## What is topology?
+
+![](figs/mug-donnut.png){fig-align="center"}
+
+::: footer
+[Source](https://www.youtube.com/watch?v=9NlqYr6-TpA)
+:::
+
+## Why topology?
+
+- Since topology analyzes the shape while discarding possibly unnecessary information, it is frequently used for analyzing high-dimensional objects
+
+- Topological data analysis (TDA) uses techniques from topology to analyze datasets
+
+- To do this, it is necessary to construct topological representations of the dataset’s points
+
+## Betti numbers
+
+The $d^{th}$ Betti number counts the number of $d$-dimensional holes. It can be used to distinguish between spaces.
+
+- $\beta_0(X)$ Connected components in X
+
+- $\beta_1(X)$ Tunnels or holes in X
+
+- $\beta_2(X)$ Voids in X
+
+![](figs/betti-numbers-examples.png){fig-align="center"}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+\
+
+![](figs/example-map-1.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">First idea: Using local maximum</p>
+
+![](figs/example-map-2.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-3.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-4.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-5.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-6.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-7.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-8.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">What is a peak?</p>
+
+<p style="text-align: center;">Second idea: flooding</p>
+
+![](figs/example-map-9.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">The island $I$ appears at sea level $b$ (its **birth time**)...</p>
+
+\
+
+![](figs/example-map-10.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+<p style="text-align: center;">The island $I$ appears at sea level $b$ (its **birth time**)...</p>
+
+<p style="text-align: center;">and disapears at seas level $d$ (its **death time**) at local maximum $x$.</p>
+
+![](figs/example-map-11.png){fig-align="center"}
+
+<p style="text-align: center;">The point $x$ is a peak if the **persistence**$:= d-b$ of the island $I$ is larger than $91$m (=$300$ft).</p>
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+![](figs/example-map-persistence.png){fig-align="center"}
+
+The persistence diagram (PD) of the elevation function is the collection of the points $(b,d)$, where $(b,d)$ corresponds to the birth/death of an island.
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## First Example - Map
+
+![](figs/example-map-persistence-2.png){fig-align="center"}
+
+The persistence diagram (PD) of the elevation function is the collection of the points $(b,d)$, where $(b,d)$ corresponds to the birth/death of an island.
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-1.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-2.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-3.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-4.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-5.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-6.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-7.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-8.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-9.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-10.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-11.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-12.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Second Example
+
+![](figs/example-persistence-13.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Persistence diagram
+
+![](figs/example-persistence-diagram.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Distance between pesistence diagrams
+
+\
+
+<p style="text-align: center;">If we have more than one persistence diagram, how do we measure the distance between them?</p>
+
+![](figs/multiple-persistence.png){fig-align="center"}
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Distance between pesistence diagrams
+
+\
+
+:::: {.columns}
+::: {.column width="30%"}
+We place both in the same diagram
+:::
+::: {.column width="70%"}
+![](figs/two-persistence-diagrams.png){fig-align="center"}
+:::
+::::
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Distance between pesistence diagrams
+
+\
+
+:::: {.columns}
+::: {.column width="30%"}
+We place both in the same diagram
+
+Get the optimal pair matching between the points (including the diagonal)
+:::
+::: {.column width="70%"}
+![](figs/persistence-diagram-matching.png){fig-align="center"}
+:::
+::::
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Distance between pesistence diagrams
+
+\
+
+:::: {.columns}
+::: {.column width="30%"}
+We place both in the same diagram
+
+Get the optimal pair matching between the points (including the diagonal)
+
+The **bottleneck distance** between them will be the largest pair distance
+:::
+::: {.column width="70%"}
+![](figs/persistence-diagram-matching.png){fig-align="center"}
+:::
+::::
+
+:::footer
+Slides based on Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation
+:::
+
+## Simplicial complexes
+
+**Definition**
+
+We call a non-empty family of sets $K$ with a collection of non-empty subsets $S$ an *abstract simplicial complex* if:
+
+1. $\{v\} \in S$ for all $v \in K$
+2. If $\sigma \in S$ and $\tau \subseteq \sigma$, then $\tau \in K$.
+
+**Terminology**
+
+The elements of a simplicial complex $K$ are called *simplices*. A $k$-simplex consists of $k+1$ verticies.
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Example**
+
+Simplicial complexes can be decomposed into their skeletons, which only contain simplices of a certain dimension.
+
+![](figs/simplicial-complex-1.png){fig-align="center" width=50%}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Example**
+
+Simplicial complexes can be decomposed into their skeletons, which only contain simplices of a certain dimension.
+
+![](figs/simplicial-complex-2.png){fig-align="center" width=50%}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Example**
+
+Simplicial complexes can be decomposed into their skeletons, which only contain simplices of a certain dimension.
+
+![](figs/simplicial-complex-3.png){fig-align="center" width=50%}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Example**
+
+Simplicial complexes can be decomposed into their skeletons, which only contain simplices of a certain dimension.
+
+![](figs/simplicial-complex-4.png){fig-align="center" width=50%}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Non-example**
+
+This is *not* a simplicial complex because some higher-dimensional simplices do not intersect in a lower dimensional one!
+ 
+![](figs/simplicial-non-example.png){fig-align="center"}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Simplicial complexes
+
+**Example**
+
+![](figs/simplicial-complex-abc.png){fig-align="center"}
+
+Notice that $K$ does not contain the 2-simplex $\{a,b,c\}$
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+# From points clouds to simplicial complexes
+
+## From points clouds to simplicial complexes
+
+\
+
+![](figs/torus-points.png){fig-align="center"}
+
+## From points clouds to simplicial complexes
+
+![](figs/torus-reconstructed.png){fig-align="center"}
+
+# Strategy 1: Triangulation
+
+## Vietoris-Rips construction
+
+**Definition**
+
+Given a set of points $\mathcal{X} = \{x_1,\dots,x_n\}$ and a metric $dist$ (such as the Euclidean distance), pick a threshold $\epsilon$ and build the Vietoris-Rips complex $\mathcal{V}_\epsilon$ defined as:
+
+$$\mathcal{V}_\epsilon := \{\sigma \subseteq \mathcal{X} | \forall u,v \in \sigma : dist(u,v) \leq \epsilon\}$$
+
+Equivalently, $\mathcal{V}_\epsilon$ contains all simplices whose *diameter* is less than or equal to $\epsilon$.
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Vietoris-Rips construction
+
+**Example**
+
+![](figs/vietoris-rips-construction.png){fig-align="center"}
+
+Draw Euclidean balls (circles) of diameter $\epsilon$ and create a $k$-simplex $\sigma$ for each subset of $k+1$ points that intersect pairwise.
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Some details about this construction
+
+:::: {.columns}
+::: {.column width="30%"}
+![](figs/vietoris-photo.jpeg)
+:::
+::: {.column width="70%"}
+- This construction dates back to a 1927 article by Leopold Vietoris$^1$
+
+- A 2010 paper by Afra Zomorodian$^2$ describes several construction algorithms
+
+- The basic idea is to build higher-dimensional simplices inductively from lower-dimensional ones
+
+- In the worst case, the Vietoris-Rips complex will contain all $2^n$ subsets of its underluing point clous $\mathcal{X}$!
+:::
+::::
+
+:::footer
+::: {style="font-size: 70%;"}
+$^1$ Vietoris, Leopold. "Über den höheren Zusammenhang kompakter Räume und eine Klasse von zusammenhangstreuen Abbildungen." Mathematische Annalen 97.1 (1927): 454-472.
+
+$^2$ Zomorodian, Afra. "Fast construction of the Vietoris-Rips complex." Computers & Graphics 34.3 (2010): 263-271.
+:::
+
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## The betti numbers of a Vietoris-Rips complex
+
+**Example**
+
+![](figs/vietoris-rips-betti.png){fig-align="center"}
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Issues with this approach
+
+\
+
+::: {style="font-size: 120%;"}
+- How to pick $\epsilon$?
+
+- There might not be one 'correct' value for $\epsilon$.
+
+- Computationally inefficient
+:::
+
+:::footer
+Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+## Picking $\epsilon$ - Topological Persistence
+
+**Intuition:** Go through all scales and track the topological features
+
+:::: {.columns}
+::: {.column width="50%"}
+![](figs/persistence-intuition-1.png)
+:::
+::::
+
+## Picking $\epsilon$ - Topological Persistence
+
+**Intuition:** Go through all scales and track the topological features
+
+:::: {.columns}
+::: {.column width="50%"}
+![](figs/persistence-intuition-2.png)
+:::
+::::
+
+## Picking $\epsilon$ - Topological Persistence
+
+**Intuition:** Go through all scales and track the topological features
+
+:::: {.columns}
+::: {.column width="50%"}
+![](figs/persistence-intuition-3.png)
+:::
+::::
+
+## Picking $\epsilon$ - Topological Persistence
+
+**Intuition:** Go through all scales and track the topological features
+
+:::: {.columns}
+::: {.column width="50%"}
+![](figs/persistence-intuition-4.png)
+:::
+::::
+
+## Picking $\epsilon$ - Topological Persistence
+
+**Intuition:** Go through all scales and track the topological features
+
+:::: {.columns}
+::: {.column width="50%"}
+![](figs/persistence-intuition-5.png)
+:::
+::: {.column width="50%"}
+![](figs/persistence-intuition-diagram.png)
+:::
+::::
+
+# Strategy 2: Skeleton
+
+
+
+## Mapper
+
+## References
+
+- 
