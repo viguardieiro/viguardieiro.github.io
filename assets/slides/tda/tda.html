@@ -905,17 +905,306 @@ If we have more than one persistence diagram, how do we measure the distance bet
 <p><img data-src="figs/persistence-intuition-diagram.png"></p>
 </div>
 </div>
+</section>
+<section id="example-with-gudhi" class="slide level2">
+<h2>Example with Gudhi</h2>
+<p><a href="https://gudhi.inria.fr/">GUDHI</a> is an open source library for Topological Data Analysis.</p>
+<p>The library offers state-of-the-art data structures and algorithms to construct simplicial complexes and compute persistent homology</p>
 </section></section>
 <section>
 <section id="strategy-2-skeleton" class="title-slide slide level1 center">
 <h1>Strategy 2: Skeleton</h1>
 
 </section>
-<section id="mapper" class="slide level2">
-<h2>Mapper</h2>
+<section id="math-world" class="slide level2">
+<h2>Math World</h2>
+<p><br>
+</p>
+<p>We start in “Math World”, where</p>
+<ul>
+<li>We draw the data as a smooth manifold</li>
+<li>Functions that appear are smooth or continuous</li>
+</ul>
+<p>We will not need either of these assumptions once we are in the “Data World”.</p>
+<p>Even more importantly, data in the real world is <strong>never</strong> like this.</p>
+<div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-1" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-1.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-2" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-2.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-3" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-3.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-4" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-4.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-5" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-5.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-6" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-6.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-7" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-7.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-8" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-8.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-9" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-9.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-10" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-10.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-11" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-11.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-12" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-12.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-13" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-13.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="math-world-14" class="slide level2">
+<h2>Math World</h2>
+
+<img data-src="figs/mapper-14.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-15.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-1" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-16.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-2" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-17.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-3" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-18.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-4" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-19.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-5" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-20.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-6" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+
+<img data-src="figs/mapper-21.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="why-is-this-useful-7" class="slide level2">
+<h2>Why is this useful?</h2>
+<p>We get “easy” understanding of the localizations of quantities of interest.</p>
+<ul>
+<li>Lenses inform us where in the space to look for phenomena.</li>
+<li>For easy localizations many different lenses will be informative.</li>
+<li>For hard (= geometrically distributed) localizations we have to be more careful. But even then, we frequently get incremental knowledge from a poorly chosen lens.</li>
+</ul>
+<div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper" class="slide level2">
+<h2>Data World - Mapper</h2>
+<p>We need to adjust the “Math World” view to bring the algorithm into the “Data World”</p>
+<ul>
+<li>We replace points with open sets in the range of the lens</li>
+<li>We replace “connected component of the inverse image” with “clusters in the inverse image”</li>
+<li>We connect clusters (nodes) with an edge if they share points in common.</li>
+</ul>
+<div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-1" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-22.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-2" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-23.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-3" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-24.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-4" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-25.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-5" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-26.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-6" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-27.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-7" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-28.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-8" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-29.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-9" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-30.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-10" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-31.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-11" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-32.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-12" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-33.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
+</section>
+<section id="data-world---mapper-13" class="slide level2">
+<h2>Data World - Mapper</h2>
+
+<img data-src="figs/mapper-34.png" class="quarto-figure quarto-figure-center r-stretch"><div class="footer">
+<p>Slides based on Anthony Bak’s <a href="https://www.youtube.com/watch?v=x3Hl85OBuc0">Stanford Seminar - Topological Data Analysis</a> presentation</p>
+</div>
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
+<ul>
+<li></li>
+</ul>
 <div class="quarto-auto-generated-content">
 <p><img src="figs/vida.jpg" class="slide-logo"></p>
 <div class="footer footer-default">

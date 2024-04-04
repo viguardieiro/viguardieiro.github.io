@@ -12,6 +12,7 @@ format:
     fontsize: 24pt
 resources:
   - tda.pdf
+jupyter: python3
 ---
 
 # Topological Data Analysis
@@ -633,9 +634,332 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 
 # Strategy 2: Skeleton
 
+## Math World
 
+\
 
-## Mapper
+We start in "Math World", where
+
+- We draw the data as a smooth manifold
+- Functions that appear are smooth or continuous
+
+We will not need either of these assumptions once we are in the "Data World".
+
+Even more importantly, data in the real world is **never** like this.
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-1.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-2.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-3.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-4.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-5.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-6.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-7.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-8.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-9.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-10.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-11.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-12.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-13.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Math World
+
+![](figs/mapper-14.png){fig-align="center"}
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-15.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-16.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-17.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-18.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-19.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-20.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+![](figs/mapper-21.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Why is this useful?
+
+We get "easy" understanding of the localizations of quantities of interest.
+
+- Lenses inform us where in the space to look for phenomena.
+- For easy localizations many different lenses will be informative.
+- For hard (= geometrically distributed) localizations we have to be more careful. But even then, we frequently get incremental knowledge from a poorly chosen lens.
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+We need to adjust the "Math World" view to bring the algorithm into the "Data World"
+
+- We replace points with open sets in the range of the lens
+- We replace "connected component of the inverse image" with "clusters in the inverse image"
+- We connect clusters (nodes) with an edge if they share points in common.
+
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-22.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-23.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-24.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-25.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-26.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-27.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-28.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-29.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-30.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-31.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-32.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-33.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
+
+## Data World - Mapper
+
+![](figs/mapper-34.png){fig-align="center"}
+ 
+:::footer
+Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+:::
 
 ## References
 
