@@ -12,7 +12,6 @@ format:
     fontsize: 24pt
 resources:
   - tda.pdf
-jupyter: python3
 ---
 
 # Topological Data Analysis
@@ -963,4 +962,37 @@ Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](htt
 
 ## References
 
-- 
+- For more information about the persistence diagram, see Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation “Quantifying the topology of datasets using Topological Data Analysis”
+
+- For more information about the mapper algorithm, see Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
+
+- To learn more about TDA for Machine Learning, see Bastian Rieck's
+ [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/) workshop (around 4 hours total)
+
+- For a course in TDA, see Raphael Tinarrage's [Topological Data Analysis with Persistent Homology](https://raphaeltinarrage.github.io/EMAp.html) summer course
+
+# To look further
+
+## References
+
+Some books of interest:
+
+- Edelsbrunner, Herbert, and John L. Harer. Computational topology: an introduction. American Mathematical Society, 2022.
+
+- Dey, Tamal Krishna, and Yusu Wang. Computational topology for data analysis. Cambridge University Press, 2022.
+
+- Carlsson, Gunnar, and Mikael Vejdemo-Johansson. Topological data analysis with applications. Cambridge University Press, 2021.
+
+Introductory paper:
+
+- Chazal, Frédéric, and Bertrand Michel. "An introduction to topological data analysis: fundamental and practical aspects for data scientists." Frontiers in artificial intelligence 4 (2021): 108.
+
+## References
+
+TDA in Python:
+
+- For overall TDA data structures and algorithms: [GUDHI](https://gudhi.inria.fr/) (both C++ and Python) or [scikit-tda](https://docs.scikit-tda.org/en/latest/)
+- For a faster implementation of the Vietoris-Rips: [Ripser.py](https://ripser.scikit-tda.org/en/latest/)
+- For a faster implementation of the Mapper: [KeplerMapper](https://kepler-mapper.scikit-tda.org/en/latest/)
+
+For an open-source library and software collection for topological data analysis and visualization: [Topology ToolKit](https://topology-tool-kit.github.io/)
