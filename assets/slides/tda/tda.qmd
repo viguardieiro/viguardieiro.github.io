@@ -44,6 +44,38 @@ resources:
 
 - To do this, it is necessary to construct topological representations of the dataset’s points
 
+## Why topology? - An example in chemistry
+
+![](figs/chemistry-1.png){fig-align="center"}
+
+:::footer
+Slides based on Raphaël Tinarrage's [From Algebraic Topology to Data Analysis](https://raphaeltinarrage.github.io/files/Slides_SSDS_I.pdf)
+:::
+
+## Why topology? - An example in chemistry
+
+![](figs/chemistry-2.png){fig-align="center"}
+
+:::footer
+Slides based on Raphaël Tinarrage's [From Algebraic Topology to Data Analysis](https://raphaeltinarrage.github.io/files/Slides_SSDS_I.pdf)
+:::
+
+## Why topology? - An example in chemistry
+
+![](figs/chemistry-3.png){fig-align="center"}
+
+:::footer
+Slides based on Raphaël Tinarrage's [From Algebraic Topology to Data Analysis](https://raphaeltinarrage.github.io/files/Slides_SSDS_I.pdf)
+:::
+
+## Why topology? - An example in biology
+
+![](figs/biology.png){fig-align="center"}
+
+:::footer
+Slides based on Raphaël Tinarrage's [From Algebraic Topology to Data Analysis](https://raphaeltinarrage.github.io/files/Slides_SSDS_I.pdf)
+:::
+
 ## Betti numbers
 
 The $d^{th}$ Betti number counts the number of $d$-dimensional holes. It can be used to distinguish between spaces.
@@ -57,7 +89,7 @@ The $d^{th}$ Betti number counts the number of $d$-dimensional holes. It can be 
 ![](figs/betti-numbers-examples.png){fig-align="center"}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## First Example - Map
@@ -410,7 +442,7 @@ We call a non-empty family of sets $K$ with a collection of non-empty subsets $S
 The elements of a simplicial complex $K$ are called *simplices*. A $k$-simplex consists of $k+1$ verticies.
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -422,7 +454,7 @@ Simplicial complexes can be decomposed into their skeletons, which only contain 
 ![](figs/simplicial-complex-1.png){fig-align="center" width=50%}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -434,7 +466,7 @@ Simplicial complexes can be decomposed into their skeletons, which only contain 
 ![](figs/simplicial-complex-2.png){fig-align="center" width=50%}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -446,7 +478,7 @@ Simplicial complexes can be decomposed into their skeletons, which only contain 
 ![](figs/simplicial-complex-3.png){fig-align="center" width=50%}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -458,7 +490,7 @@ Simplicial complexes can be decomposed into their skeletons, which only contain 
 ![](figs/simplicial-complex-4.png){fig-align="center" width=50%}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -470,7 +502,7 @@ This is *not* a simplicial complex because some higher-dimensional simplices do 
 ![](figs/simplicial-non-example.png){fig-align="center"}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Simplicial complexes
@@ -482,7 +514,7 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 Notice that $K$ does not contain the 2-simplex $\{a,b,c\}$
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 # From points clouds to simplicial complexes
@@ -497,7 +529,14 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 
 ![](figs/torus-reconstructed.png){fig-align="center"}
 
-# Strategy 1: Triangulation
+# 
+
+::: {style="font-size: 180%;"}
+**Strategy 1: Triangulation**
+:::
+::: {style="font-size: 150%;"}
+Constructing the data's simplicial complex
+:::
 
 ## Vietoris-Rips construction
 
@@ -510,7 +549,7 @@ $$\mathcal{V}_\epsilon := \{\sigma \subseteq \mathcal{X} | \forall u,v \in \sigm
 Equivalently, $\mathcal{V}_\epsilon$ contains all simplices whose *diameter* is less than or equal to $\epsilon$.
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Vietoris-Rips construction
@@ -522,7 +561,7 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 Draw Euclidean balls (circles) of diameter $\epsilon$ and create a $k$-simplex $\sigma$ for each subset of $k+1$ points that intersect pairwise.
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Some details about this construction
@@ -549,7 +588,7 @@ $^1$ Vietoris, Leopold. "Über den höheren Zusammenhang kompakter Räume und ei
 $^2$ Zomorodian, Afra. "Fast construction of the Vietoris-Rips complex." Computers & Graphics 34.3 (2010): 263-271.
 :::
 
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## The betti numbers of a Vietoris-Rips complex
@@ -559,7 +598,7 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 ![](figs/vietoris-rips-betti.png){fig-align="center"}
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Issues with this approach
@@ -575,7 +614,7 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 :::
 
 :::footer
-Slides based on [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
 :::
 
 ## Picking $\epsilon$ - Topological Persistence
@@ -588,6 +627,10 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 :::
 ::::
 
+:::footer
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
 ## Picking $\epsilon$ - Topological Persistence
 
 **Intuition:** Go through all scales and track the topological features
@@ -597,6 +640,10 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 ![](figs/persistence-intuition-2.png)
 :::
 ::::
+
+:::footer
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
 
 ## Picking $\epsilon$ - Topological Persistence
 
@@ -608,6 +655,10 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 :::
 ::::
 
+:::footer
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
 ## Picking $\epsilon$ - Topological Persistence
 
 **Intuition:** Go through all scales and track the topological features
@@ -617,6 +668,10 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 ![](figs/persistence-intuition-4.png)
 :::
 ::::
+
+:::footer
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
 
 ## Picking $\epsilon$ - Topological Persistence
 
@@ -631,7 +686,18 @@ Slides based on [Topological Data Analysis for Machine Learning](https://bastian
 :::
 ::::
 
-# Strategy 2: Skeleton
+:::footer
+Slides based on Bastian Rieck's [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/)
+:::
+
+# 
+
+::: {style="font-size: 180%;"}
+**Strategy 2: Data skeleton**
+:::
+::: {style="font-size: 150%;"}
+The Mapper Algortihm
+:::
 
 ## Math World
 
@@ -960,6 +1026,8 @@ Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](htt
 Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
 :::
 
+# To look further
+
 ## References
 
 - For more information about the persistence diagram, see Vincent Divol's [CDS Lunch Seminar](https://cds.nyu.edu/data-science-lunch-seminar-series/) presentation “Quantifying the topology of datasets using Topological Data Analysis”
@@ -969,9 +1037,7 @@ Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](htt
 - To learn more about TDA for Machine Learning, see Bastian Rieck's
  [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/) workshop (around 4 hours total)
 
-- For a course in TDA, see Raphael Tinarrage's [Topological Data Analysis with Persistent Homology](https://raphaeltinarrage.github.io/EMAp.html) summer course
-
-# To look further
+- For a course in TDA, see Raphaël Tinarrage's [Topological Data Analysis with Persistent Homology](https://raphaeltinarrage.github.io/EMAp.html) summer course
 
 ## References
 
@@ -996,3 +1062,5 @@ TDA in Python:
 - For a faster implementation of the Mapper: [KeplerMapper](https://kepler-mapper.scikit-tda.org/en/latest/)
 
 For an open-source library and software collection for topological data analysis and visualization: [Topology ToolKit](https://topology-tool-kit.github.io/)
+
+For more examples of TDA aplications, see [DONUT - Database of Original & Non-Theoretical Uses of Topology](https://donut.topology.rocks/)
