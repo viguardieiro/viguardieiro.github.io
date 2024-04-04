@@ -1035,7 +1035,7 @@ Slides based on Anthony Bak's [Stanford Seminar - Topological Data Analysis](htt
 - For more information about the mapper algorithm, see Anthony Bak's [Stanford Seminar - Topological Data Analysis](https://www.youtube.com/watch?v=x3Hl85OBuc0) presentation
 
 - To learn more about TDA for Machine Learning, see Bastian Rieck's
- [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/) workshop (around 4 hours total)
+ [Topological Data Analysis for Machine Learning](https://bastian.rieck.me/talks/ecml_pkdd_2020/) tutorial (around 4 hours total)
 
 - For a course in TDA, see Raphaël Tinarrage's [Topological Data Analysis with Persistent Homology](https://raphaeltinarrage.github.io/EMAp.html) summer course
 
@@ -1063,4 +1063,7 @@ TDA in Python:
 
 For an open-source library and software collection for topological data analysis and visualization: [Topology ToolKit](https://topology-tool-kit.github.io/)
 
-For more examples of TDA aplications, see [DONUT - Database of Original & Non-Theoretical Uses of Topology](https://donut.topology.rocks/)
+For more examples of TDA aplications:
+
+- [DONUT - Database of Original & Non-Theoretical Uses of Topology](https://donut.topology.rocks/)
+- Applied Algebraic Topology Research Network [seminar series](https://www.aatrn.net/seminar)
