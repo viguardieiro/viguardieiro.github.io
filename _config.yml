@@ -58,10 +58,10 @@ plugins:
 author:
   name   : "Vitoria Guardieiro"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Research scientist at NYU working on visualization systems for Explainable AI"
-  location: "New York, USA"
+  bio    : "PhD Student @ UPenn CIS"
+  location: "Philadelphia, USA"
   links:
-    - label: "New York, USA"
+    - label: "Philadelphia, USA"
       icon: "fas fa-fw fa-map-marker-alt"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
