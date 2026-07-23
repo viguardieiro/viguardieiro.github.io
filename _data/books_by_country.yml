@@ -1,0 +1,247 @@
+# Data for the interactive map at /books/.
+# Country codes are ISO 3166-1 alpha-2 (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2).
+#
+# home: where the circle marker is drawn — hometown, not current residence.
+#
+# books: one entry per country.
+#   status: "read" or "tbr" (to be read)
+#   name:   country display name, shown in the tooltip
+#   title:  book title
+#   author: book author (optional)
+
+# pinX/pinY place the star precisely (SVG units, viewBox 2000x1001) since
+# svgMap's automatic country-center placement isn't precise enough for a city.
+# These were derived for Uberlandia, MG by calibrating against Brazil's own
+# rendered shape in this map — recompute if you ever move the marker.
+home:
+  country: BR
+  label: "Uberlândia, Brazil"
+  pinX: 706
+  pinY: 693
+
+books:
+  AR:
+    name: Argentina
+    status: read
+    title: "Elena sabe"
+    author: "Claudia Piñeiro"
+  AU:
+    name: Australia
+    status: read
+    title: "Practical Ethics"
+    author: "Peter Singer"
+  BE:
+    name: Belgium
+    status: read
+    title: "I Who Have Never Known Men"
+    author: "Jacqueline Harpman"
+  BO:
+    name: Bolivia
+    status: read
+    title: "Fresh Dirt from the Grave"
+    author: "Giovanna Rivero"
+  BR:
+    name: Brazil
+    status: read
+    title: "O alienista"
+    author: "Machado de Assis"
+  CA:
+    name: Canada
+    status: read
+    title: "The Handmaid's Tale"
+    author: "Margaret Atwood"
+  CL:
+    name: Chile
+    status: read
+    title: "When We Cease to Understand the World"
+    author: "Benjamín Labatut"
+  CN:
+    name: China
+    status: read
+    title: "The Three-Body Problem"
+    author: "Liu Cixin"
+  CO:
+    name: Colombia
+    status: read
+    title: "One Hundred Years of Solitude"
+    author: "Gabriel García Márquez"
+  DK:
+    name: Denmark
+    status: read
+    title: "On the Calculation of Volume I"
+    author: "Solvej Balle"
+  EC:
+    name: Ecuador
+    status: read
+    title: "Cockfight"
+    author: "María Fernanda Ampuero"
+  FR:
+    name: France
+    status: read
+    title: "The Little Prince"
+    author: "Antoine de Saint-Exupéry"
+  GR:
+    name: Greece
+    status: read
+    title: "Logicomix"
+    author: "Apostolos Doxiadis"
+  HU:
+    name: Hungary
+    status: read
+    title: "The Notebook, The Proof, The Third Lie: Three Novels"
+    author: "Ágota Kristóf"
+  IE:
+    name: Ireland
+    status: read
+    title: "The Picture of Dorian Gray"
+    author: "Oscar Wilde"
+  IL:
+    name: Israel
+    status: read
+    title: "Sapiens: A Brief History of Humankind"
+    author: "Yuval Noah Harari"
+  IT:
+    name: Italy
+    status: read
+    title: "My Brilliant Friend"
+    author: "Elena Ferrante"
+  JP:
+    name: Japan
+    status: read
+    title: "Goodbye, Eri"
+    author: "Tatsuki Fujimoto"
+  NG:
+    name: Nigeria
+    status: read
+    title: "We Should All Be Feminists"
+    author: "Chimamanda Ngozi Adichie"
+  PT:
+    name: Portugal
+    status: read
+    title: "E se eu morrer amanhã?"
+    author: "Filipa Fonseca Silva"
+  RU:
+    name: Russia
+    status: read
+    title: "The Death of Ivan Ilyich"
+    author: "Leo Tolstoy"
+  ZA:
+    name: South Africa
+    status: read
+    title: "How to Be Well"
+    author: "Frank Lipman"
+  KR:
+    name: South Korea
+    status: read
+    title: "The Vegetarian"
+    author: "Han Kang"
+  SE:
+    name: Sweden
+    status: read
+    title: "Factfulness"
+    author: "Hans Rosling"
+  TW:
+    name: Taiwan
+    status: read
+    title: "AI Superpowers"
+    author: "Kai-Fu Lee"
+  GB:
+    name: United Kingdom
+    status: read
+    title: "Children of Time"
+    author: "Adrian Tchaikovsky"
+  US:
+    name: United States
+    status: read
+    title: "The Left Hand of Darkness"
+    author: "H.P. Lovecraft"
+  AT:
+    name: Austria
+    status: tbr
+    title: "The Wall"
+    author: "Marlen Haushofer"
+  BA:
+    name: Bosnia and Herzegovina
+    status: tbr
+    title: "Body Kintsugi"
+    author: "Senka Marić"
+  BG:
+    name: Bulgaria
+    status: tbr
+    title: "She Who Remains"
+    author: "Rene Karabash"
+  CZ:
+    name: Czech Republic
+    status: tbr
+    title: "The Unbearable Lightness of Being"
+    author: "Milan Kundera"
+  GT:
+    name: Guatemala
+    status: tbr
+    title: "O Senhor Presidente"
+    author: "Miguel Ángel Asturias"
+  GY:
+    name: Guyana
+    status: tbr
+    title: "My Bones and My Flute"
+    author: "Edgar Mittelholzer"
+  MX:
+    name: Mexico
+    status: tbr
+    title: "Monstrilio"
+    author: "Gerardo Sámano Córdova"
+  PY:
+    name: Paraguay
+    status: tbr
+    title: "Eu o Supremo"
+    author: "Augusto Roa Bastos"
+  PE:
+    name: Peru
+    status: tbr
+    title: "Travessuras da Menina Má"
+    author: "Mario Vargas Llosa"
+  ES:
+    name: Spain
+    status: tbr
+    title: "Te Dei Olhos e Olhaste as Trevas"
+    author: "Irene Solà"
+  SR:
+    name: Suriname
+    status: tbr
+    title: "Quão caro foi o açúcar?"
+    author: "Cynthia McLeod"
+  TR:
+    name: Turkey
+    status: tbr
+    title: "The Anthropologists"
+    author: "Ayşegül Savaş"
+  UY:
+    name: Uruguay
+    status: tbr
+    title: "Contos de Amor, de Loucura e de Morte"
+    author: "Horacio Quiroga"
+  VE:
+    name: Venezuela
+    status: tbr
+    title: "Cai a Noite em Caracas"
+    author: "Karina Sainz Borgo"
+  AO:
+    name: Angola
+    status: tbr
+    title: "Teoria Geral do Esquecimento"
+    author: "José Eduardo Agualusa"
+  EG:
+    name: Egypt
+    status: tbr
+    title: "Woman at Point Zero"
+    author: "Nawal El Saadawi"
+  MA:
+    name: Morocco
+    status: tbr
+    title: "The Sand Child"
+    author: "Tahar Ben Jelloun"
+  ZM:
+    name: Zambia
+    status: tbr
+    title: "The Old Drift"
+    author: "Namwali Serpell"

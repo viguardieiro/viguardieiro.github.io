@@ -1,0 +1,110 @@
+{
+  "Argentina": {
+    "title": "Elena sabe",
+    "author": "Claudia Piñeiro"
+  },
+  "Australia": {
+    "title": "Practical Ethics",
+    "author": "Peter Singer"
+  },
+  "Belgium": {
+    "title": "I Who Have Never Known Men",
+    "author": "Jacqueline Harpman"
+  },
+  "Bolivia": {
+    "title": "Fresh Dirt from the Grave",
+    "author": "Giovanna Rivero"
+  },
+  "Brazil": {
+    "title": "O alienista",
+    "author": "Machado de Assis"
+  },
+  "Canada": {
+    "title": "The Handmaid's Tale",
+    "author": "Margaret Atwood"
+  },
+  "Chile": {
+    "title": "When We Cease to Understand the World",
+    "author": "Benjamín Labatut"
+  },
+  "China": {
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin"
+  },
+  "Colombia": {
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez"
+  },
+  "Denmark": {
+    "title": "On the Calculation of Volume I",
+    "author": "Solvej Balle"
+  },
+  "Ecuador": {
+    "title": "Cockfight",
+    "author": "María Fernanda Ampuero"
+  },
+  "France": {
+    "title": "The Little Prince",
+    "author": "Antoine de Saint-Exupéry"
+  },
+  "Greece": {
+    "title": "Logicomix",
+    "author": "Apostolos Doxiadis"
+  },
+  "Hungary": {
+    "title": "The Notebook, The Proof, The Third Lie: Three Novels",
+    "author": "Ágota Kristóf"
+  },
+  "Ireland": {
+    "title": "The Picture of Dorian Gray",
+    "author": "Oscar Wilde"
+  },
+  "Israel": {
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari"
+  },
+  "Italy": {
+    "title": "My Brilliant Friend",
+    "author": "Elena Ferrante"
+  },
+  "Japan": {
+    "title": "Goodbye, Eri",
+    "author": "Tatsuki Fujimoto"
+  },
+  "Nigeria": {
+    "title": "We Should All Be Feminists",
+    "author": "Chimamanda Ngozi Adichie"
+  },
+  "Portugal": {
+    "title": "E se eu morrer amanhã?",
+    "author": "Filipa Fonseca Silva"
+  },
+  "Russia": {
+    "title": "The Death of Ivan Ilyich",
+    "author": "Leo Tolstoy"
+  },
+  "South Africa": {
+    "title": "How to Be Well",
+    "author": "Frank Lipman"
+  },
+  "South Korea": {
+    "title": "The Vegetarian",
+    "author": "Han Kang"
+  },
+  "Sweden": {
+    "title": "Factfulness",
+    "author": "Hans Rosling"
+  },
+  "Taiwan": {
+    "title": "AI Superpowers",
+    "author": "Kai-Fu Lee"
+  },
+  "United Kingdom": {
+    "title": "Children of Time",
+    "author": "Adrian Tchaikovsky"
+  },
+  "United States": {
+    "title": "The Left Hand of Darkness",
+    "author": "H.P. Lovecraft"
+  }
+}
