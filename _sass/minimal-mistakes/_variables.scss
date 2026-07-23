@@ -7,6 +7,9 @@
    ========================================================================== */
 
 $doc-font-size: 12 !default;
+$doc-font-size-medium: $doc-font-size * 1.125 !default;
+$doc-font-size-large: $doc-font-size * 1.25 !default;
+$doc-font-size-x-large: $doc-font-size * 1.375 !default;
 
 /* paragraph indention */
 $paragraph-indent: false !default; // true, false (default)
@@ -17,6 +20,28 @@ $serif: Georgia, Times, serif !default;
 $sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
   "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* modern font-stack alternatives (referenced by upstream theme partials) */
+$default-serif: Georgia, Times, serif;
+$default-sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$default-monospace: Monaco, Consolas, "Lucida Console", monospace;
+$emoji-native: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+$system-ui: system-ui, sans-serif;
+$humanist: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+$geometric-humanist: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+$classical-humanist: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+$neo-grotesque: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+$rounded-sans: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+$industrial: Bahnschrift, 'DIN Alternate', 'Franklin Gothic Medium', 'Nimbus Sans Narrow', sans-serif-condensed, sans-serif;
+$handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;
+$old-style: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+$transitional: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+$slab-serif: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
+$monospace-slab-serif: 'Nimbus Mono PS', 'Courier New', monospace;
+$didone: Didot, 'Bodoni MT', 'Noto Serif Display', 'URW Palladio L', P052, Sylfaen, serif;
+$antique: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+$monospace-code: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 
 /* sans serif typefaces */
 $sans-serif-narrow: $sans-serif !default;
@@ -88,6 +113,13 @@ $yiq-contrasted-threshold: 175 !default;
 $yiq-debug: false !default;
 
 /* brands */
+$black-color: #000000 !default;
+$bluesky-color: #1083fe !default;
+$discord-color: #5865f2 !default;
+$signal-color: #3a76f0 !default;
+$telegram-color: #2aabee !default;
+$whatsapp-color: #25d366 !default;
+$x-color: #0f1419 !default;
 $behance-color: #1769ff !default;
 $bitbucket-color: #205081 !default;
 $dribbble-color: #ea4c89 !default;

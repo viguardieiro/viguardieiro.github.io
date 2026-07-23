@@ -18,6 +18,28 @@ Replace sample content with your own and [configure as necessary](https://mmista
 
 ---
 
+## Local development
+
+Install dependencies (only needed once, or after changing the `Gemfile`):
+
+```
+bundle install
+```
+
+Serve the site locally with live rebuilding on file changes:
+
+```
+bundle exec jekyll serve
+```
+
+Then open [http://localhost:4000](http://localhost:4000). Add `--livereload` to also auto-refresh the browser on changes:
+
+```
+bundle exec jekyll serve --livereload
+```
+
+---
+
 ## Troubleshooting
 
 If you have a question about using Jekyll, start a discussion on the [Jekyll Forum](https://talk.jekyllrb.com/) or [StackOverflow](https://stackoverflow.com/questions/tagged/jekyll). Other resources:

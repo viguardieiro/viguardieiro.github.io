@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Vitoria Guardieiro
-email: vitoriaguardieiro@gmail.com
+email: vitoriag@engineering.upenn.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Vitoria Guardieiro's academic website
 twitter_username: username
@@ -65,7 +65,7 @@ author:
       icon: "fas fa-fw fa-map-marker-alt"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:vitoriaguardieiro@gmail.com"
+      url: "mailto:vitoriag@engineering.upenn.edu"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/viguardieiro"

@@ -11,6 +11,9 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 
 ## Education
 
+**Ph.D. in Computer and Information Science** - University of Pennsylvania, 2024/Now
+* Advisor: Eric Wong
+
 **M.S. in Mathematical Modeling** - Getulio Vargas Foundation (FGV), 2021/2023
 * Advisors: Jorge Poco and Marcos M. Raimundo (Unicamp)
 * Dissertation: [Multi-objective Optimization in Machine Learning - A Systematic Review](https://bibliotecadigital.fgv.br/dspace/handle/10438/34077)
@@ -21,18 +24,35 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 
 ## Publications
 
-1. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2023). "[Enforcing fairness using ensemble of diverse Pareto-optimal models](https://doi.org/10.1007/s10618-023-00922-y)". Data Mining and Knowledge Discovery.
+**Manuscripts under review**
 
-2. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "[Analyzing the Equity of the Brazilian National High School Exam by Validating the Item Response Theory’s Invariance](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.64/2022.EDM-posters.64.pdf)". Proceedings of the 15th International Conference on Educational Data Mining.
+1. Vitoria Guardieiro, A. Khare, A. Stein, E. Wong. "[Instruction following by principled attention boosting](https://arxiv.org/abs/2506.13734)". Under review at NeurIPS 2026. Earlier versions presented at NeurIPS 2025 Workshop MechInterp (spotlight), ICLR 2026 Workshop Sci4DL, and ICLR 2026 Workshop Trustworthy AI.
 
-3. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Getulio Vargas Foundation.
+2. Vitoria Guardieiro, F. L. Usberti, Jorge Poco, F. J. V. Zuben, Marcos M. Raimundo. "An efficient box-based scalarization algorithm for non-convex multi-objective optimization". Under review at European Journal of Operational Research.
+
+**Peer-reviewed publications**
+
+1. G. Valdrighi, A. M. Ribeiro, Jansen S. B. Pereira, Vitoria Guardieiro, A. Hendricks, D. M. Filho, J. D. N. Garcia, F. F. Bocca, T. B. Veronese, L. Wanner, Marcos M. Raimundo. (2025). "[Best practices for responsible machine learning in credit scoring](https://doi.org/10.1007/s00521-025-11520-y)". Neural Computing and Applications.
+
+2. P. Silva, Vitoria Guardieiro, B. Barr, C. Silva, L. G. Nonato. (2025). "[Visagreement: Visualizing and Exploring Explanations (Dis)Agreement](https://doi.org/10.1109/TVCG.2025.3558074)". IEEE Transactions on Visualization and Computer Graphics.
+
+3. Vitoria Guardieiro, F. I. de Oliveira, H. Doraiswamy, L. G. Nonato, C. Silva. (2024). "[TopoMap++: A faster and more space efficient technique to compute projections with topological guarantees](https://doi.org/10.1109/TVCG.2024.3456365)". IEEE Transactions on Visualization and Computer Graphics.
+
+4. P. Solunke, Vitoria Guardieiro, J. Rulff, P. Xenopoulos, G. Y. Y. Chan, B. Barr, L. G. Nonato, C. Silva. (2024). "[Mountaineer: Topology-Driven Visual Analytics for Comparing Local Explanations](https://doi.org/10.1109/TVCG.2024.3418653)". IEEE Transactions on Visualization and Computer Graphics.
+
+5. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2023). "[Enforcing fairness using ensemble of diverse Pareto-optimal models](https://doi.org/10.1007/s10618-023-00922-y)". Data Mining and Knowledge Discovery.
+
+6. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "[Analyzing the Equity of the Brazilian National High School Exam by Validating the Item Response Theory’s Invariance](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.64/2022.EDM-posters.64.pdf)". Proceedings of the 15th International Conference on Educational Data Mining.
+
+7. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Getulio Vargas Foundation.
 
 ## Experience
 
 **New York University** [![Homepage](/assets/images/link-icon.svg)](https://www.nyu.edu/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/new-york-university/)  
-  * Research Scientist -- *Oct 2023/Now*
-  * Visiting Researcher -- *Jan 2023/Apr 2023*
+  * Research Scientist -- *Oct 2023/Jul 2024*
     * Researched Topological Data Analysis for Machine Learning explainability at the Visualization Imaging and Data Analysis Center (VIDA) with Professor Claudio Silva
+  * Visiting Researcher -- *Jan 2023/Apr 2023*
+    * Visited VIDA and worked with Professor Claudio Silva on using Topological Data Analysis for comparing machine learning explanation methods
 
 **Getulio Vargas Foundation** [![Homepage](/assets/images/link-icon.svg)](https://portal.fgv.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/school/fgv/)  
   * Graduate Researcher -- *March 2021/Jun 2023*
@@ -45,26 +65,26 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
     * Participated in the elaboration of the Consumer Price Index - Web (IPC-Web), a joint project between the School of Applied Mathematics (EMAp) and the Brazilian Institute of Economics (IBRE). In the project, I was responsible for filtering and classifying the products from the database resulting from the crawler used.
 
 **Gabriel Tecnologia** [![Homepage](/assets/images/link-icon.svg)](https://www.gabriel.com.br/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/company/eusouagabriel/)  
-*Startup that created a protection network that uses artificial intelligence cameras.*
-  * Data Scientist -- *Jan 2021/Now*
-    * Developed computer vision object detection, classification and tracking models for the automatic detection of anomalies in security camera videos.
-  * Data Science Intern -- *May 2020/December 2020*
-    * Studied and tested Facial Detection and Recognition models, especially open-source ones, and developed the first version of the Facial Recognition system used by the company.
+*SoftBank-funded AI startup that develops technology focused on public security.*
+  * Data Science Intern/Data Scientist -- *May 2020/Jul 2021*
+    * Developed computer vision object detection, classification, and tracking models for the automatic detection of anomalies in security camera videos (Python, PyTorch).
 
 **BTG Pactual** [![Homepage](/assets/images/link-icon.svg)](https://www.btgpactual.com/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/company/btgpactual/)   
 *The largest investiment bank in Latin America.*
   * IT Intern -- *Jan 2020/Apr 2020*
-    * Developed dashboards, visualizations, and metrics for internal IT products. Learned Docker, C#, and Angular.
+    * Developed dashboards, visualizations, and metrics for internal IT products (SQL, C++).
 
 **PSR - Energy Consulting and Analytics** [![Homepage](/assets/images/link-icon.svg)](https://www.psr-inc.com/pt/) [![LinkedIn](/assets/images/linkedin-icon.svg)](https://www.linkedin.com/company/psrenergy/)  
 *Global provider of technological solutions and consulting services in the areas of electricity and natural gas (E&G) since 1987.*
-  * Intern -- *Feb 2019/Oct 2019*
-    * Developed optimization programs for maintenance scheduling in thermoelectric and hydroelectric plants and determination of firm energy from hydroelectric plants.
-  * Summer Intern -- *Jan 2019/Feb 2019*
-    * Learned Julia programming language and optimization methods like linear programming and integer linear programming (ILP).
+  * Mathematical Modelling Intern -- *Jan 2019/Sep 2019*
+    * Developed optimization programs for maintenance scheduling in thermoelectric and hydroelectric plants (Julia, JuMP).
 
 ## Teaching
-**Teaching Assistant**
+**University of Pennsylvania**
+  * CIS 7000 - Accelerating Research with Generative AI, Fall 2025
+  * CIS 1990 - Introduction to Designing LLM Agents, Spring 2026
+
+**Getulio Vargas Foundation**
   * [Machine Learning](https://emap.fgv.br/en/discipline/machine-learning), 2022/2.
   * [Continuous Optimization](https://emap.fgv.br/en/discipline/continuous-optimization), 2022/2.
   * [Optimization for Data Science](https://emap.fgv.br/en/discipline/optimization-data-science), 2022/2.
@@ -102,7 +122,7 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 
 **Languages:** Portuguese (Native) and English (TOEFL 112/120)
 
-*Last update: Nov 28, 2023*
+*Last update: Jul 23, 2026*
 
 {% comment %}  
 Talks
