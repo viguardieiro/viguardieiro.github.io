@@ -79,10 +79,10 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
   * Mathematical Modelling Intern -- *Jan 2019/Sep 2019*
     * Developed optimization programs for maintenance scheduling in thermoelectric and hydroelectric plants (Julia, JuMP).
 
-## Teaching
+## Teaching Assistant
 **University of Pennsylvania**
-  * CIS 7000 - Accelerating Research with Generative AI, Fall 2025
-  * CIS 1990 - Introduction to Designing LLM Agents, Spring 2026
+  * [CIS 7000 - Accelerating Research with Generative AI](https://riceric22.github.io/arga/), Fall 2025
+  * [CIS 1990 - Introduction to Designing LLM Agents](https://designing-agents-upenn.github.io/), Spring 2026
 
 **Getulio Vargas Foundation**
   * [Machine Learning](https://emap.fgv.br/en/discipline/machine-learning), 2022/2.
