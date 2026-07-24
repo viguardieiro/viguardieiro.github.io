@@ -11,7 +11,7 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 
 ## Education
 
-**Ph.D. in Computer and Information Science** - University of Pennsylvania, 2024/Now
+**Ph.D. in Computer and Information Science** - University of Pennsylvania, Fall 2024/Now
 * Advisor: Eric Wong
 
 **M.S. in Mathematical Modeling** - Getulio Vargas Foundation (FGV), 2021/2023
@@ -43,8 +43,6 @@ A pdf version of my CV is available [here](/assets/files/CV___Vitoria_Guardieiro
 5. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2023). "[Enforcing fairness using ensemble of diverse Pareto-optimal models](https://doi.org/10.1007/s10618-023-00922-y)". Data Mining and Knowledge Discovery.
 
 6. Vitoria Guardieiro, Marcos M. Raimundo, Jorge Poco. (2022). "[Analyzing the Equity of the Brazilian National High School Exam by Validating the Item Response Theory’s Invariance](https://educationaldatamining.org/edm2022/proceedings/2022.EDM-posters.64/2022.EDM-posters.64.pdf)". Proceedings of the 15th International Conference on Educational Data Mining.
-
-7. Vitoria Guardieiro, Jorge Poco. (2021). "[Exploring counterfactual antecedents to reduce criminality in Rio de Janeiro](https://hdl.handle.net/10438/31623)" (Project report). School of Applied Mathematics, Getulio Vargas Foundation.
 
 ## Experience
 
